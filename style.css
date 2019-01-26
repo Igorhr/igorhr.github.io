@@ -1,14 +1,15 @@
+#body {
 background-color:black;
-color:white;
-h1 {
-    color: blue;
-    text-align: center;
-}
+color:white;}
+        h1 {
+        color: blue;
+        text-align: center;
+        }
 
-h2 {
-  color: red;
-}
-p {
-    color: yellow;
-}
-    
+                h2 {
+                  color: red;
+                }
+                p {
+                    color: yellow;
+                }
+
