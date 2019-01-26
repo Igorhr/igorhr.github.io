@@ -1,6 +1,12 @@
+#headerBody {
+      background-color: blue;
+}
 #allBody {
 background-color: black;
 color: white;}
+#footherBody {
+      background-color: gray;
+}
       h1 {
        color: yellow;
         text-align: center;
