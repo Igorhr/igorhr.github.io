@@ -3,7 +3,7 @@
   <head>
   </head>
   <body>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Dinosaur_at_islamabad.jpg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Dinosaur_at_islamabad.jpg" width=500px>
   <h1>All about Dinosaurs</h1>
   </body>
 </html>
