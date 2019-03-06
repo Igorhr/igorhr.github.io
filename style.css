@@ -6,16 +6,16 @@
   color: white;
 }
 #footherBody {
-  background-color: gray;
+  background-color: silver;
 }
-h1 {
-  color: yellow;
+h1.black {
+  color: black;
   text-align: center;
 }
-h2 {
+h1.red {
   color: red;
 }
-p {
-  color: yellow;
+p.silver {
+  color: silver;
 }
 
