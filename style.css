@@ -1,21 +1,21 @@
 #headerBody {
-      background-color: blue;
+  background-color: blue;
 }
 #allBody {
-background-color: black;
-color: white;}
-#footherBody {
-      background-color: gray;
+  background-color: black;
+  color: white;
 }
-      h1 {
-       color: yellow;
-        text-align: center;
-        }
-
-                h2 {
-                  color: red;
-                }
-                p {
-                    color: yellow;
-                }
+#footherBody {
+  background-color: gray;
+}
+h1 {
+  color: yellow;
+  text-align: center;
+}
+h2 {
+  color: red;
+}
+p {
+  color: yellow;
+}
 
