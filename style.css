@@ -2,8 +2,11 @@ h1 {
   text-align: center;
 }
 ul {
-  line-style-type: square;
+  list-style-type: square;
 }
+p {
+  font-size: 2em;
+}  
 
 #headerBody {
   background-color: blue;
