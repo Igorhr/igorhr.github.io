@@ -1,3 +1,10 @@
+h1 {
+  text-align: center;
+}
+ul {
+  line-style-type: square;
+}
+
 #headerBody {
   background-color: blue;
 }
