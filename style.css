@@ -1,4 +1,8 @@
 
+div#content {
+  position: absolute;
+  width: 99%;
+}
 div#header {
   position: absolute;
   width: 100%;
