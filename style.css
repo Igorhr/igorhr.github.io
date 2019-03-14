@@ -17,6 +17,7 @@ div#header img {
 div#leftSide {
   width: 31%;
   float: left;
+  margin: 1% auto 0 0;
 }
 div#leftSide img {
  width: 30%; 
