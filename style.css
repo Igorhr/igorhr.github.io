@@ -1,27 +1,4 @@
-ul {
-  list-style-type: square;
-}
-p {
-  font-size: 2em;
-}  
 
-#headerBody {
-  background-color: navyBlue;
-}
-#allBody {
-  background-color: gray;
-  color: white;
-}
-#footherBody {
-  background-color: silver;
-}
-.black {
-  color: black;
-  text-align: center;
-}
-p.silver {
-  color: silver;
-}
 div#header {
   position: absolute;
   width: 100%;
@@ -36,4 +13,12 @@ div#header h1 {
 div#header img {
   float: left;
   margin: 1% 0 1% 1%;
+}
+div#leftSide {
+  width: 31%;
+  float: left;
+}
+div#main {
+  width: 66%;
+  float: right;
 }
