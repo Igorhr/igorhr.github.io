@@ -29,6 +29,10 @@ div#header {
   left: 0;
   background-color: orange;
 }
+div#header h1 {
+  font-family: serif;
+  margin-left: 3%;
+}
 div#header img {
   float: left;
   margin: 1% 0 1% 1%;
