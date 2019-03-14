@@ -18,7 +18,13 @@ div#leftSide {
   width: 31%;
   float: left;
 }
+div#leftSide img {
+ width: auto; 
+}
 div#main {
-  width: 66%;
+    width: 66%;
   float: right;
+}
+div#main img {
+  width: auto;
 }
