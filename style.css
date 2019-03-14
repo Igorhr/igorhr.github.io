@@ -21,6 +21,7 @@ div#leftSide {
 }
 div#leftSide img {
  width: 30%; 
+  clear: both;
 }
 div#main {
     width: 66%;
