@@ -28,4 +28,14 @@ h1.red {
 p.silver {
   color: silver;
 }
-
+div#header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: orange;
+}
+div#header img {
+  float: left;
+  margin: 1% 0 1% 1%;
+}
