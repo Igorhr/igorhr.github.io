@@ -35,4 +35,5 @@ div#main img {
 }
 div.noFloat {
   clear: both;
+  margin: .4%;
 }
