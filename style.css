@@ -28,3 +28,6 @@ div#main {
 div#main img {
   width: 65%;
 }
+div.noFloat {
+  clear: both;
+}
