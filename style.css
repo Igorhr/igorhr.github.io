@@ -9,6 +9,7 @@ div#header {
   top: 0;
   left: 0;
   background-color: orange;
+  clear: both;
 }
 div#header h1 {
   font-family: serif;
