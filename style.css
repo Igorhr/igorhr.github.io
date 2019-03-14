@@ -19,12 +19,12 @@ div#leftSide {
   float: left;
 }
 div#leftSide img {
- width: auto; 
+ width: 30%; 
 }
 div#main {
     width: 66%;
   float: right;
 }
 div#main img {
-  width: auto;
+  width: 65%;
 }
