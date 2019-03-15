@@ -1,11 +1,4 @@
 
-div#content {
-  position: absolute;
-  width: 99%;
-  
-  left: 0;
-  margin-top: 2%;
-}
 div#header {
   position: absolute;
   width: 100%;
@@ -14,28 +7,36 @@ div#header {
   background-color: orange;
   margin-bottom: 3%;
 }
-div#header h1 {
+div#header h1, div#noFloat h1 {
   font-family: serif;
   margin-left: 18%;
   font-weight: 900;
   font-size: 3em;
-  padding: 0;
-  //text-align: center;
+ 
 }
 div#header img {
   float: left;
  
  margin: 2% 0 0 3%;
 }
-div.noFloat {
-  clear: both;
-  margin: .4%;
- // visibility: hidden;
+div#noFloat {
+    clear:both;
+  width: 100%;
+ padding-bottom: 2em;
+visibility: hidden;
+}
+
+div#content {
+  position: absolute;
+  width: 100%;
+  
+  left: 0;
+  
 }
 div#leftSide {
-  width: 31%;
+  width: 32%;
   float: left;
-  margin: 5% 0 0 .5%;
+  margin: 0 0 0 .5%;
 }
 ul {
     font-size: 1.4em;
@@ -45,23 +46,33 @@ li {
     line-height: 2em;
 }
 div#leftSide img {
+    top: auto;
  width: 100%; 
+    float: left;
+    position: relative;
  
 }
+
 div#main {
-    width: 66%;
+    width: 66.5%;
   float: right;
 }
 div#main img {
   width: 100%;
-  margin-top: 5%;
+  margin-right: .2%;
+  float: right;
+ //  position: static; 
 }
 
 div#footer {
     position: absolute;
     bottom: 0;
     left: 0;
+    
     background-color: lightgrey;
     width: 100%;
     font-size: 1.2em;
+}
+div#footer p {
+   margin-left: 1%;    
 }
