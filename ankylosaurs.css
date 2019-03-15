@@ -1,0 +1,36 @@
+div#header {
+  position: absolute;
+  width: 100%;  
+  background-color: burlywood;
+  top: 0;
+  left: 0;
+}
+div#header img{
+  float: left;
+margin-top: 2%;
+    margin-left: 1%;
+}
+div#header h1 {
+    font-weight: 900;
+    font-size: 2em;
+    text-align: left;
+}
+
+
+div#hheader {
+  width: 100%;  
+  background-color: burlywood;
+  visibility: hidden;  
+}
+div#hheader img{
+  float: left;
+    visibility: hidden;
+}
+
+
+
+
+p.clearFloat {
+    clear:both;
+}
+
