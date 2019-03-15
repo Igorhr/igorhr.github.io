@@ -2,7 +2,7 @@
 div#content {
   position: absolute;
   width: 99%;
-  top: 0;
+  
   left: 0;
   margin-top: 2%;
 }
@@ -12,37 +12,56 @@ div#header {
   top: 0;
   left: 0;
   background-color: orange;
-  clear: both;
+  margin-bottom: 3%;
 }
 div#header h1 {
   font-family: serif;
-  margin-left: 3%;
+  margin-left: 18%;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 3em;
   padding: 0;
+  //text-align: center;
 }
 div#header img {
   float: left;
-  margin: 1% 0 1% 1%;
+ 
+ margin: 2% 0 0 3%;
+}
+div.noFloat {
+  clear: both;
+  margin: .4%;
+ // visibility: hidden;
 }
 div#leftSide {
   width: 31%;
   float: left;
-  margin: 1% auto 0 0;
+  margin: 5% 0 0 .5%;
+}
+ul {
+    font-size: 1.4em;
+    
+}
+li {
+    line-height: 2em;
 }
 div#leftSide img {
- width: 30%; 
-  clear: both;
+ width: 100%; 
+ 
 }
 div#main {
     width: 66%;
   float: right;
 }
 div#main img {
-  width: 65%;
+  width: 100%;
+  margin-top: 5%;
 }
-div.noFloat {
-  clear: both;
-  margin: .4%;
-  visibility: hidden;
+
+div#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: lightgrey;
+    width: 100%;
+    font-size: 1.2em;
 }
