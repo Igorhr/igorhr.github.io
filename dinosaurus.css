@@ -1,0 +1,97 @@
+div#header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: darkorange;
+    display: block;
+}
+div#spacer {
+    visibility: hidden;
+    width: 100%;
+}
+div#header img, div#spacer img {
+    margin: 5% 2% 0 3%;
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+div#header h1, div#spacer h1 {
+    font-family: serif;
+    color: black;
+    font-size: 3em;
+    padding: 0;
+}
+p#headFloat {
+    clear: both;
+}
+
+div#content {
+    position: absolute;
+    width: 100%;
+    display: inline;
+}
+
+div#nav {
+    float: left;
+    width: 31%
+    left: 0;
+}
+div#nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+div#nav ul li {
+    background-color: blue;
+    margin-bottom: .25em;
+}
+div#nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    text-decoration: none;
+    color: orange;
+    display: inline-block;
+    padding: .3em;
+}
+div#main {
+    width: 63%;
+    
+    float: right;
+    }
+div#main h2 {
+    text-align: center;
+    font-size: 1em;
+}
+div#main img {
+  display: inline;
+   
+}
+p#noFootFlood {
+    clear: both;
+}
+div#footer {
+    width: 100%;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+}
+div#footer ul {
+       list-style-type: none;
+    padding-left: 5%;
+}
+div#footer ul li {
+    display: inline;
+    margin-right: 5%;
+}
+div#footer ul li {
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-decoration: none;
+    display: inline-block;
+    padding: .3em;
+}
