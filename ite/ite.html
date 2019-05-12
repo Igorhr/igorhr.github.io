@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/png" sizes="72x72">
+    <title>Interactive Table of Elements</title>
+    <link rel="stylesheet" href="styleite.css">
+  <!--  <style>
+
+
+            body {
+                font-family: 'Rubik', sans-serif;
+                background-color: #1E1D1D;
+            }
+
+            body * {
+                color: white;
+                cursor: default; /*celo vreme da e mousot pointer a ne kak selektor*/
+            }
+
+            .hide {
+                border: none;
+                background-image: none;
+            }
+
+               /* da zazematt divovite deskripcii celosno kockata a ne nekoj del samo */
+            .width-height-full {
+              height: 100%;
+              width: 100%;
+            }
+
+            table {
+                border-collapse: collapse;  /*	Borders are collapsed into a single border when possible */
+                margin: 0 auto; /* The CSS margin properties are used to create space around elements. If the margin property has three values: top=172px, left and right = auto, bottom = 0 */
+            }
+
+            table[id="main-table"] {
+              margin-top: 24px;
+            }
+
+            table[id="bottom-table"] {
+              margin-top: 18px;
+              margin-bottom: 60px;
+            }
+
+            td {
+                width: 4vw;
+                height: 4vw;
+                border: 3px solid white;
+                background-image: url("bg.png");
+                background-size: cover; /*Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges*/
+            }
+
+            td * {
+                color: white;
+            }
+
+            td .td-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+            }
+
+            td .atom-number {
+                height: 15%;
+                padding: .2vw 0 0 .2vw;
+            }
+
+            td .symbol-mass-container {
+                height: 85%;
+                display: flex;   /*The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.*/
+                flex-direction: column;  /*The column value stacks the flex items vertically*/
+                justify-content: space-around; /*The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally). /space-around	Items are positioned with space before, between, and after the lines*/
+                align-items: center;  /*The align-items property specifies the default alignment for items inside the flexible container./	center - Items are positioned at the center of the container*/
+                position: relative;
+                bottom: 5px
+            }
+
+            td .symbol {
+                font-weight: 400;
+                font-size: 1.6vw;
+                position: relative;
+                top: 1px;
+            }
+
+            td .mass {
+                font-size: .7vw;
+                position: relative;
+                bottom: 14px;
+            }
+
+
+
+
+            #symbol {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            #symbol h1 {
+              font-size: 7vw;
+              margin: 0;
+            }
+
+           #details .detail {
+             margin-bottom: .4vw;
+           }
+
+           #details .detail-title {
+             font-size: 1.1vw;
+             font-weight: 500;
+             display: inline;
+           }
+
+           #details .detail-text {
+             font-size: .9vw;
+             font-weight: 300;
+             display: inline;
+           }
+
+           #information {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+           }
+
+           #information .info-piece {
+             width: 96%;
+             margin-bottom: .7vw;
+           }
+
+           #information .info-piece-title {
+             font-size: 1.14vw;
+             font-weight: 500;
+           }
+
+           #information .info-piece-text {
+             font-size: .8vw;
+             font-weight: 300;
+           }
+
+
+    </style> -->
+
+  </head>
+
+
+  <body>
+    <!-- postavuvas prvin kak ke izgleda sekoja posebna kocka -->
+    <!--<table>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="td-container">
+                        <div class="atom-number">1</div>
+
+                        <div class="symbol-mass-container">
+                            <b class="symbol">Ar</b>
+                            <span class="mass">Mass</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td-container">
+                        <div class="atom-number">1</div>
+
+                        <div class="symbol-mass-container">
+                            <b class="symbol">Ar</b>
+                            <span class="mass">Mass</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="td-container">
+                        <div class="atom-number">1</div>
+
+                        <div class="symbol-mass-container">
+                            <b class="symbol">Ar</b>
+                            <span class="mass">Mass</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="td-container">
+                        <div class="atom-number">1</div>
+
+                        <div class="symbol-mass-container">
+                            <b class="symbol">Ar</b>
+                            <span class="mass">Mass</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>     -->
+
+
+    <!-- glavnata tabela e tuka -->
+    <table id="main-table">
+      <tbody>
+
+                 <!-- prviot red  od 8 od prvata tabela-->
+        <tr>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+
+          <!-- tuka vo ovaa kocka se informaciite za elementite-->
+          <td class="hide" colspan="4" rowspan="4">
+            <div id="information" class="width-height-full">
+
+              <div class="info-piece">
+                <div class="info-piece-title" id="info-description-title"> <!--Description --></div>
+                <div class="info-piece-text" id="info-description-text"><!--Flourine is a yellowish poison gas and the most reactive element.--></div>
+              </div>
+
+              <div class="info-piece">
+                <div class="info-piece-title" id="info-used-title"><!--Where is used--></div>
+                <div class="info-piece-text" id="info-where-used-text">
+                  <!--Fluorine is a common additive to drinking water and is used as a cleaning agent in toothpaste. In pop culture, hydrofluoric acid was used as a dissolving agent in the popular TV show "Breaking Bad." The chemical can dissolve glass and is used mainly as an etching compound.-->
+                </div>
+
+              <div class="info-piece">
+                <div class="info-piece-title" id="info-where-from-title"><!--Where it's from--></div>
+                <div class="info-piece-text" id="info-where-from-text"><!--The big bang--></div>
+              </div>
+            </div>
+          </td>
+
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+        </tr>
+
+                    <!-- vtoriot red  od 8 od prvata tabela i dva elementi -->
+        <tr>
+          <td></td>
+          <td class="hide"></td>
+
+          <td class="hide" colspan="3" rowspan="3">
+            <div id="symbol" class="width-height-full">
+              <h1 id="symbol-text"><!--Ar--></h1>
+            </div>
+          </td>
+
+          <td class="hide" colspan="3" rowspan="3">
+            <div id="details" class="width-height-full">
+              <div class="detail">
+                <div class="detail-title" id="detail-name-title"><!--Name:--></div>
+                <div class="detail-text" id="detail-name-text"><!--Hydrogen--></div>
+              </div>
+              <div class="detail">
+                <div class="detail-title" id="detail-mass-title"><!--Mass:--></div>
+                <div class="detail-text" id="detail-mass-text"><!--1.000043--></div>
+              </div>
+              <div class="detail">
+                <div class="detail-title" id="detail-atomic-number-title"><!--Atomic number:--></div>
+                <div class="detail-text" id="detail-atomic-number-text"><!--12--></div>
+              </div>
+              <div class="detail">
+                <div class="detail-title" id="detail-boiling-point-title"><!--Boiling point:--></div>
+                <div class="detail-text" id="detail-boiling-point-text"><!--186--></div>
+              </div>
+              <div class="detail">
+                <div class="detail-title" id="detail-type-title"><!--Type:--></div>
+                <div class="detail-text" id="detail-type-text"><!--Metalloid--></div>
+              </div>
+              <div class="detail">
+                <div class="detail-title" id="detail-discovered-title"><!--discovered:--></div>
+                <div class="detail-text" id="detail-discovered-text"><!--Metalloid--></div>
+              </div>
+
+            </div>
+          </td>
+
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td></td>
+        </tr>
+
+                    <!-- tretiot red  od 8 od prvata tabela  -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+                    <!-- cetvrtiot red  od 8 od prvata tabela -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+                    <!-- petiot red  od 8 od prvata tabela -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          </tr>
+
+                    <!-- shestiot red  od 8 od prvata tabela -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          </tr>
+
+                      <!-- sedmiot red  od 8 od prvata tabela  -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="hide"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>  </td>
+          </tr>
+
+        <!-- osmiot red  od 8 od prvata tabela  -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="hide"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+    <!-- dolnata tabela posle ide  tuka -->
+    <table id="bottom-table">
+      <tbody>
+
+                       <!-- prviot red  od dolnata tabela  -->
+        <tr>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="hide"></td>
+        </tr>
+
+                         <!-- vtoriot red od dolnata tabela -->
+        <tr>
+          <td class="hide"></td>
+          <td class="hide"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="hide"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+  </body>
+</html>
