@@ -2,6 +2,10 @@
         body {
             font-family: 'Rubik', sans-serif;
             background: linear-gradient(to right, rgb(73, 155, 234) 0%, rgb(32,124, 229) 100%)
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
         }
 
         body * {
