@@ -10,7 +10,7 @@
         }
 
         body * {
-            color: yellow;
+            color: white;
             cursor: default; /*celo vreme da e mousot pointer a ne kak selektor*/
         }
 
