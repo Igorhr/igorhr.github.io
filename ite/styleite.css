@@ -48,7 +48,8 @@
         }
 
         td:hower {
-                animation: zoomIn 500ms;
+                animation: zoomIn 1000ms;
+                opacity: .9;
 
 }
 
