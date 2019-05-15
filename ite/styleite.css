@@ -48,7 +48,7 @@
         }
 
         td:hover {
-                animation: zoomIn 1000ms;
+                animation: zoomInDown 600ms;
                 opacity: .9;
 
 }
