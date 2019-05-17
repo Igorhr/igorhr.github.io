@@ -91,12 +91,56 @@ var elementi_podatok = [
     atomska_tezina: 12.0116,
     kategorija: "Неметал",
     klasa_kategorija: "nemetal",
-    tocka_topenje: нема точка на топење,
+    tocka_topenje: "нема точка на топење",
     tocka_vrienje: 4827,
     pronaogjanje: "Oд античко време",
     opis: "Алтропите на јаглерод вклучуваат графит, еден од најмеката позната супстанца, и дијамант, најјаката природна супстанција.",
     kade_se_koristi: "Некои форми на графит се користат за термоизолација, но некои други форми се добри термички проводници.",
     od_kade_doagja: odKadeTojDoagja(doagja_od.kosmicki_zraci)
+  },  
+  {
+    atomski_broj: 7,
+    ime: "Азот",
+    simbol: "N",
+    atomska_tezina: 14.0073,
+    kategorija: "Неметал",
+    klasa_kategorija: "nemetal",
+    tocka_topenje: −210,
+    tocka_vrienje: -196.795,
+    pronaogjanje: 1772,
+    opis: "Тој е гас без боjа, мирис и вкус, една од главните состоjки на воздухот.",
+    kade_se_koristi: "Служи основно за производство на вештачки ѓубрива и експлозиви.",
+    od_kade_doagja: odKadeTojDoagja(doagja_od.zvezdi_mala_masa, doagja_od.supernova)
+  },
+  {
+    atomski_broj: 8,
+    ime: "Кислород",
+    simbol: "O",
+    atomska_tezina: 15.9998,
+    kategorija: "Неметал",
+    klasa_kategorija: "nemetal",
+    tocka_topenje: −218.79,
+    tocka_vrienje: -182.962,
+    pronaogjanje: 1772,
+    opis: "Тој е гас без боjа.",
+    kade_se_koristi: "Кислородот е главна состојка на воздухот, се произведува од растенијата за време на фотосинтезата и е потребен за аеробна респирација кај животните.",
+    od_kade_doagja: odKadeTojDoagja(doagja_od.supernova)
+  },
+  {
+    atomski_broj: 9,
+    ime: "Флуор",
+    simbol: "F",
+    atomska_tezina: 18.9984,
+    kategorija: "Неметал",
+    klasa_kategorija: "nemetal",
+    tocka_topenje: −219.67,
+    tocka_vrienje: -188.11,
+    pronaogjanje: 1810,
+    opis: "корозивен бледожолт гас кој е моќно оксидационо средство. 
+    Тој е најреактивниот и најелектронегативниот од сите хемиски елементи,
+    и брзо формира соединенија со повеќето други елементи.",
+    kade_se_koristi: "Кислородот е главна состојка на воздухот, се произведува од растенијата за време на фотосинтезата и е потребен за аеробна респирација кај животните.",
+    od_kade_doagja: odKadeTojDoagja(doagja_od.supernova)
   },
   
   
