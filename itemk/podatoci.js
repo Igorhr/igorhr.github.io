@@ -5,6 +5,9 @@ var doagja_od = {
   masivni_zvezdi: "се синтетизираат во масивните ѕвезди",
   supernova: "Супернова eксплозија на масивни ѕвезди",
   vestacki_element: "синтетички елемент"
+
+
+
 };
 
 
@@ -94,7 +97,7 @@ var elementi_podatok = [
     opis: "Алтропите на јаглерод вклучуваат графит, еден од најмеката позната супстанца, и дијамант, најјаката природна супстанција.",
     kade_se_koristi: "Некои форми на графит се користат за термоизолација, но некои други форми се добри термички проводници.",
     od_kade_doagja: odKadeTojDoagja(doagja_od.kosmicki_zraci)
-  },  
+  },
   {
     atomski_broj: 7,
     ime: "Азот",
@@ -102,7 +105,7 @@ var elementi_podatok = [
     atomska_tezina: 14.0073,
     kategorija: "Неметал",
     klasa_kategorija: "nemetal",
-    tocka_topenje: −210,
+    tocka_topenje: -210,
     tocka_vrienje: -196.795,
     pronaogjanje: 1772,
     opis: "Тој е гас без боjа, мирис и вкус, една од главните состоjки на воздухот.",
@@ -116,7 +119,7 @@ var elementi_podatok = [
     atomska_tezina: 15.9998,
     kategorija: "Неметал",
     klasa_kategorija: "nemetal",
-    tocka_topenje: −218.79,
+    tocka_topenje: -218.79,
     tocka_vrienje: -182.962,
     pronaogjanje: 1772,
     opis: "Тој е гас без боjа.",
@@ -130,33 +133,31 @@ var elementi_podatok = [
     atomska_tezina: 18.9984,
     kategorija: "Неметал",
     klasa_kategorija: "nemetal",
-    tocka_topenje: −219.67,
+    tocka_topenje: -219.67,
     tocka_vrienje: -188.11,
     pronaogjanje: 1810,
-    opis: "корозивен бледожолт гас кој е моќно оксидационо средство. 
-    Тој е најреактивниот и најелектронегативниот од сите хемиски елементи,
-    и брзо формира соединенија со повеќето други елементи.",
+    opis: "корозивен бледожолт гас кој е моќно оксидационо средство. Тој е најреактивниот и најелектронегативниот од сите хемиски елементи, и брзо формира соединенија со повеќето други елементи.",
     kade_se_koristi: "Кислородот е главна состојка на воздухот, се произведува од растенијата за време на фотосинтезата и е потребен за аеробна респирација кај животните.",
     od_kade_doagja: odKadeTojDoagja(doagja_od.supernova)
   },
-  
-   
-  
+
+
+
 ];
 
 
-function odKadeTojDoagja(...iskra) {
-  let zborce = iskra[0];
-  for(let i = 0; i <iskra.length; i++){
+function odKadeTojDoagja(...args) {
+  let str = args[0];
+  for(let i = 0; i <args.length; i++){
     if(i > 0) {
-      if(i < iskra.length - 1) {
-        zborce += ", " + iskra[i];
+      if(i < args.length - 1) {
+        str += ", " + args[i];
       }else {
-        zborce += " & " + iskra[i];
+        str += " & " + args[i];
       }
     }
   }
-  zborce = zborce.charAt(0).toLocaleUpperCase() + zborce.slice(1);
-  zborce += ".";
-  return zborce;
+  str = str.charAt(0).toLocaleUpperCase() + str.slice(1);
+  str += ".";
+  return str;
 };
