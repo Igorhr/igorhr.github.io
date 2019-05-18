@@ -17,7 +17,7 @@ function izgradiTabelaNaElementite() {
       
       `;
     
-    kelii[i].classList.add("${elementi_podatok[i].klasa_kategorija}");
+    kelii[i].classList.add(`${elementi_podatok[i].klasa_kategorija}`);
     
     
     kelii[i].setAttribute("onmouseover", "pokaziDetalite(this)");
