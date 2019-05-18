@@ -5,10 +5,7 @@ var doagja_od = {
   masivni_zvezdi: "се синтетизираат во масивните ѕвезди",
   supernova: "Супернова eксплозија на масивни ѕвезди",
   vestacki_element: "синтетички елемент"
-  
-      
-  
-}
+};
 
 
 
@@ -143,8 +140,23 @@ var elementi_podatok = [
     od_kade_doagja: odKadeTojDoagja(doagja_od.supernova)
   },
   
-  
-  
-  
+   
   
 ];
+
+
+function odKadeTojDoagja(...iskra) {
+  let zborce = iskra[0];
+  for(let i = 0; i <iskra.length; i++){
+    if(i > 0) {
+      if(i < iskra.length - 1) {
+        zborce += ", " + iskra[i];
+      }else {
+        zborce += " & " + iskra[i];
+      }
+    }
+  }
+  zborce = zborce.charAt(0).toLocaleUpperCase() + zborce.slice(1);
+  zborce += ".";
+  return zborce;
+};
