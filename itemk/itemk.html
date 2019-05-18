@@ -7,7 +7,7 @@
     <link rel="icon" href="icona.png" sizes="72x72">
     <title>Интерактивна табела на елементите</title>
     <style >
-      
+
       @media(max-width: 1600px) {
         td .masa {
           bottom: 6px;
@@ -19,50 +19,50 @@
           line-height: .8vw;
         }
         td .simbol-masa {
-          bottom: 5px;          
+          bottom: 5px;
         }
         td {
           height: 4.6vw;
           width: 4.6vw;
         }
       }
-      
-      
-      
+
+
+
 
       body {
         font-family: "Roboto", san-serif;
         background: linear-gradient(to right, Lavender 0%, PaleTurquoise 100%);
       }
-      
-      
+
+
 
       table {
         /*border-collapse: collapse;*/
         margin: 1.5vw auto 0;
       }
       table[id = "gornaTabela"] {
-        margin-top: 24px;        
+        margin-top: 24px;
       }
       table[id="dolnaTabela"] {
         margin-top: 100px;
-        margin-bottom: 60px;        
+        margin-bottom: 60px;
       }
-      
-      
-      
-      
+
+
+
+
       .skrienaKocka {
         background-image: none;
         border: none;
-      }      
+      }
       .shirina-visina-celosna {
         width: 100%;
         height: 100%;
       }
-      
 
-            
+
+
       td {
         height: 4vw;
         width: 4vw;
@@ -98,30 +98,30 @@
         font-size: 1.6vw;
         position: relative;
         top: .35vw;
-      }      
+      }
       td .masa {
         font-size: .8vw;
         position: relative;
         bottom: .1vw;
-        
+
       }
-      
-      
-      
+
+
+
       #simbol {
         display: flex;
         align-items: center;
         justify-content: center;
-      }      
+      }
       #simbol h1 {
         font-size: 8vw;
-        margin: 0;        
+        margin: 0;
       }
-      
-      
-      
+
+
+
       #detali .detal {
-        margin-bottom: .4vw;        
+        margin-bottom: .4vw;
       }
       #detali .detal-naslov {
         font-size: 1.1vw;
@@ -133,9 +133,9 @@
         font-weight: 300;
         display: inline;
       }
-      
-      
-      
+
+
+
       #informacija {
         display: flex;
         flex-direction: column;
@@ -164,15 +164,15 @@
     <div>
       <!--tabela za postavuvanje na kockite vnatre sekoj element
     <div>
-      
+
       <h1>Интерактивна табела на хемиските елементи</h1>
-      
+
       <table>
         <tbody>
 
           <tr>
             <td>
-              <div class="td-kontejner"> <!-- vo td-kontejner e sostaven od  2 elemti: 1atomskiot broj (15%),  i 2. symbolot i massata kontejnero(85%) 
+              <div class="td-kontejner"> <!-- vo td-kontejner e sostaven od  2 elemti: 1atomskiot broj (15%),  i 2. symbolot i massata kontejnero(85%)
                 <div class="atomskiot-broj">26</div>
 
                 <div class="simbol-masa-kontejner">
@@ -183,7 +183,7 @@
             </td>
 
             <td>
-              <div class="td-kontejner"> <!-- vo td-kontejner e sostaven od  2 elemti: 1atomskiot broj (15%),  i 2. symbolot i massata kontejnero(85%) 
+              <div class="td-kontejner"> <!-- vo td-kontejner e sostaven od  2 elemti: 1atomskiot broj (15%),  i 2. symbolot i massata kontejnero(85%)
                 <div class="atomskiot-broj">26</div>
 
                 <div class="simbol-masa-kontejner">
@@ -208,7 +208,7 @@
             </td>
 
             <td>
-              <div class="td-kontejner"> <!-- vo td-kontejner e sostaven od  2 elemti: 1atomskiot broj (15%),  i 2. symbolot i massata kontejnero(85%) 
+              <div class="td-kontejner"> <!-- vo td-kontejner e sostaven od  2 elemti: 1atomskiot broj (15%),  i 2. symbolot i massata kontejnero(85%)
                 <div class="atomskiot-broj">26</div>
 
                 <div class="simbol-masa-kontejner">
@@ -221,15 +221,15 @@
 
         </tbody>
       </table>
-        
-    </div> 
+
+    </div>
 -->
       </div>
-    
+
           <!-- gorna Tabela -->
     <table class="gornaTabela">
       <tbody>
-        
+
 <!-------- *******  prv red od gornaTabela   *********** --------------------------------------------------------------------------------------------->
         <tr>
           <td class="skrienaKocka"></td>
@@ -240,29 +240,29 @@
           <td class="skrienaKocka"></td>
           <td class="skrienaKocka"></td>
           <td class="skrienaKocka"></td>
-          
+
           <!---osnovni informacii za elementot -->
           <td id class="skrienaKocka" colspan="4" rowspan="4">
             <div id="informacija" class="shirina-visina-celosna">
-              
+
               <div class="informacija-del">
-                <div id="informacija-opis-naslov" class="informacija-del-naslov"><!--Опис:--></div>
-                <div id="informacija-opis-tekst" class="informacija-del-tekst"><!--Металното или мајчинското железо ретко се наоѓа на површината на Земјата, бидејќи има тенденција да оксидира.--></div>                    
+                <div id="informacija-opisigo-naslov" class="informacija-del-naslov"><!--Опис:--></div>
+                <div id="informacija-opisigo-tekst" class="informacija-del-tekst"><!--Металното или мајчинското железо ретко се наоѓа на површината на Земјата, бидејќи има тенденција да оксидира.--></div>                    
               </div>
-              
+
               <div class="informacija-del">
                 <div id="informacija-kade-sekoristi-naslov" class="informacija-del-naslov"><!--Каде се користи:--></div>
                 <div id="informacija-kade-sekoristi-tekst" class="informacija-del-tekst"><!--Железовите соединенија произведени во најголем обем во индустријата--></div>
               </div>
-              
+
               <div class="informacija-del">
                 <div id="informacija-odkade-poteknuva-naslov" class="informacija-del-naslov"><!--Од каде потекнува:--></div>
                 <div id="informacija-odkade-poteknuva-tekst" class="informacija-del-tekst"><!-- со фузија во ѕвезди со висока маса--></div>
               </div>
-              
+
             </div>
           </td>
-          
+
           <td class="skrienaKocka"></td>
           <td class="skrienaKocka"></td>
           <td class="skrienaKocka"></td>
@@ -270,59 +270,59 @@
           <td class="skrienaKocka"></td>
           <td class="skrienaKocka"></td>
         </tr>
-        
+
  <!---------------- ***********   vtor red od gornaTabela    *****  ----------------------------------------------------------------------------------->
         <tr>
           <td class="element"></td>
           <td class="skrienaKocka"></td>
-          
+
           <!---vo ovaa kocka e semsten Hemijskiot znak na elementot -->
           <td class="skrienaKocka" colspan="3" rowspan="3">
             <div id="simbol" class="shirina-visina-celosna">
               <h1 id="hemijski-znak-tekst"><!--Fe--></h1>
             </div>
           </td>
-          
+
       <!---semsteni osnovnite karakteristiki na elementot -->
           <td class="skrienaKocka" colspan="3" rowspan="3">
             <div id="detali" class="shirina-visina-celosna">
-              
+
               <div class="detal">
                 <div id="detal-ime-naslov" class="detal-naslov"><!--Име:--></div>
                 <div id="detal-ime-tekst" class="detal-tekst"><!--Железо--></div>
               </div>
-              
+
               <div class="detal">
                 <div id="detal-atomska-tezina-naslov" class="detal-naslov"><!--Атомска тежина:--></div>
                 <div id="detal-atomska-tezina-tekst" class="detal-tekst"><!--55.845--></div>
               </div>
-              
+
               <div class="detal">
                 <div id="detal-atomski-broj-naslov" class="detal-naslov"><!--Атомски број:--></div>
                 <div id="detal-atomski-broj-tekst" class="detal-tekst"><!--26--></div>
               </div>
-              
+
               <div class="detal">
                 <div id="detal-topenje-naslov" class="detal-naslov"><!--Точка на топење:--></div>
                 <div id="detal-topenje-tekst" class="detal-tekst"><!--1538--></div>
               </div>
-              
+
               <div class="detal">
                 <div id="detal-vrienje-naslov" class="detal-naslov"><!--Точка на вриење:--></div>
                 <div id="detal-vrienje-tekst" class="detal-tekst"><!--2862--></div>
               </div>
-              
+
               <div class="detal">
                 <div id="detal-kategorija-naslov" class="detal-naslov"><!--Категорија:--></div>
                 <div id="detal-kategorija-tekst" class="detal-tekst"><!--Преоден метал--></div>
               </div>
-              
+
               <div class="detal">
                 <div id="detal-otkrivanje-naslov" class="detal-naslov"><!--Откриен:--></div>
                 <div id="detal-otkrivanje-tekst" class="detal-tekst"><!--пред 5000 п.н.е.--></div>
               </div>
-              
-            </div>            
+
+            </div>
           </td>
           <td class="skrienaKocka"></td>
           <td class="skrienaKocka"></td>
@@ -331,7 +331,7 @@
           <td class="skrienaKocka"></td>
           <td class="element"></td>
         </tr>
-        
+
 <!---------*********  tret red od gornaTabela  ************ -------------------------------------------------------------------------------------------->
         <tr>
           <td class="element"></td>
@@ -343,7 +343,7 @@
           <td class="element"></td>
           <td class="element"></td>
         </tr>
-        
+
 <!----------************  cetvrt red od gornaTabela ************ --------------------------------------------------------------------------------------->
         <tr>
           <td class="element"></td>
@@ -355,7 +355,7 @@
           <td class="element"></td>
           <td class="element"></td>
         </tr>
-        
+
         <!--peti red od gornaTabela-->
         <tr>
           <td class="element"></td>
@@ -377,7 +377,7 @@
           <td class="element"></td>
           <td class="element"></td>
         </tr>
-        
+
         <!--shesti red od gornaTabela-->
         <tr>
           <td class="element"></td>
@@ -399,7 +399,7 @@
           <td class="element"></td>
           <td class="element"></td>
         </tr>
-        
+
         <!--sedmi red od gornaTabela-->
         <tr>
           <td class="element"></td>
@@ -421,7 +421,7 @@
           <td class="element"></td>
           <td class="element"></td>
         </tr>
-        
+
         <!--osmi red od gornaTabela-->
         <tr>
           <td class="element"></td>
@@ -443,17 +443,17 @@
           <td class="element"></td>
           <td class="element"></td>
         </tr>
-        
+
       </tbody>
     </table>
-    
+
                   <!-- Dolna Tabela -->
     <table class="dolnaTabela">
       <tbody>
         <tr>
           <td class="skrienaKocka"></td>
           <td class="skrienaKocka"></td>
-          
+
           <td class="element"></td>
           <td class="element"></td>
           <td class="element"></td>
@@ -469,13 +469,13 @@
           <td class="element"></td>
           <td class="element"></td>
           <td class="element"></td>
-          
+
           <td class="skrienaKocka"></td>
         </tr>
                 <tr>
           <td class="skrienaKocka"></td>
           <td class="skrienaKocka"></td>
-          
+
           <td class="element"></td>
           <td class="element"></td>
           <td class="element"></td>
@@ -491,17 +491,17 @@
           <td class="element"></td>
           <td class="element"></td>
           <td class="element"></td>
-          
+
           <td class="skrienaKocka"></td>
         </tr>
-        
-        
-        
+
+
+
       </tbody>
     </table>
-  
+
     <script src="podatoci.js"></script>
     <script src="itemk.js"></script>
-    
+
   </body>
 </html>
