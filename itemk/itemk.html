@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600&amp;subset=cyrillic" rel="stylesheet">
     <link rel="icon" href="icona.png" sizes="72x72">
+    <link rel="stylesheet" href="../animacija.css">
     <title>Интерактивна табела на елементите</title>
     <style >
 
@@ -105,6 +106,10 @@
         border: .2vw solid white;
         background-image: url("atomic.png");
         background-size: cover;
+      }
+      td:hover {
+        animation: flip 500ms;
+        opacity: .9;
       }
       td * {
         color: darkblue;
