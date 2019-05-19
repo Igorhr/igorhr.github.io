@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Learn HTML</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inside-html {
+        background-color: Gainsboro;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Most Popular HTML Tag</h1>
+    <p>Here are the most popular tags that you will use. </p>
+    <ol>
+      <li>
+        <h2> Bold and Italic </h2>
+        <p><strong>Bold text</strong> and <em>italic text</em>… or even <strong><em>bold italic</em></strong>  text are often used to emphasis particular words or phrases. </p>
+        <p>&ltstrong&gt&lt&frasl;strong&gt  is the tag for bold text</p>
+        <p>&ltem&gt&lt&frasl;em&gt  is the tag for italic text</p>
+
+      </li>
+
+
+
+      <li>
+        <h2>Headings </h2>
+        <p>Headings are used not just for style and organizing your posts and pages, but also for SEO (search engine optimization). Nowadays, headings don’t affect SEO as much as they used to, but search engines still read them to find the main topics of your page or post.</p>
+        <p>There are six heading tags: &lth1&gt&lt&frasl;h1&gt, &lth2&gt&lt&frasl;h2&gt, &lth3&gt&lt&frasl;h3&gt, &lth4&gt&lt&frasl;h4&gt, &lth5&gt&lt&frasl;h5&gt, &lth6&gt&lt&frasl;h6&gt. Not all are commonly used. H1 headers are typically the largest, and each following header getting smaller.</p>
+        <div class="inside-html">
+          <p>&lth1&gtHeading 1&lt&frasl;h1&gt</p>
+          <p>&lth2&gtHeading 2&lt&frasl;h2&gt</p>
+          <p>&lth3&gtHeading 3&lt&frasl;h3&gt</p>
+          <p>&lth4&gtHeading 4&lt&frasl;h4&gt</p>
+          <p>&lth5&gtHeading 5&lt&frasl;h5&gt</p>
+          <p>&lth6&gtHeading 6&lt&frasl;h6&gt</p>
+        </div>
+        <p>The HTML above appears as: </p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p><strong>Heading Tips: </strong>When using headings, include keywords in your headings. Don’t apply them to entire paragraphs. Don’t use Heading 5 or 6 – search engines don’t track them.</p>
+      </li>
+
+      <li>
+        <h2>Links </h2>
+        <p>Linking text or an image to another website is done with a hyperlink (aka hypertext or link). </p>
+
+        <p class="inside-html">&lta href="http://www.someweb.com"&gtnekoj website&lt&frasl;a&gt</p>
+        <p>Above is the basic structure of an HTML link. </p>
+        <p><strong>a</strong> = anchor text</p>
+        <p><strong>href</strong> = hyperlink reference – aka URL web address </p>
+        <p>The web page you want to link to goes in between the quotes of the href. </p>
+        <p>The HTML code above would appear as: <a href="http://www.nekojweb.com">nekoj website</a></p>
+        <p>Below, you’ll learn how to create a clickable image. </p>
+      </li>
+
+      <li>
+        <h2>Images</h2>
+        <p>The image tag is another very useful one. It is build as following:</p>
+        <p class="inside-html">&lt img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html logo" height=”” width=””&gt </p>
+        <p>The <strong>img</strong> is the HTML image tag. </p>
+        <p>The <strong>src</strong> is the location of the photo. This needs to point to the original photo file, which is typically uploaded typically uploaded to your own web server, or taken from another website. </p>
+        <p>The <strong>alt</strong> text is the description of your photo that is required by web standards, and is important for visually impaired website visitors. </p>
+        <p>The <strong>height</strong> and <strong>width</strong> specify how tall or wide your photo is, in terms of pixels. Leaving them blank will result in your photo appearing at it’s original size. </p>
+        <p>Below is the HTML logo that I placed in this article with the html text above. </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html logo" width="200" height="200">
+      </li>
+
+      <li>
+        <h2>Lists</h2>
+        <p>To create a list, you can use the <stong>&ltul&gt</stong>  or <stong>&ltol&gt</stong>  tag.<stong>&ltul&gt</stong>  is an ‘unordered list’ that results in a bullet-point list. <stong>&ltol&gt</stong> is an ‘ordered list’ that results in a numbered list.</p>
+        <p>Within these tags are the individual items of your list, which use the <stong>&ltli&gt</stong> tag.</p>
+        <h3>Unordered Example:</h3>
+        <div class="inside-html">
+          <p>&ltul&gt</p>
+          <p>&ltli&gtBullet Point 1&lt&frasl;li&gt</p>
+          <p>&ltli&gtBullet Point 2&lt&frasl;li&gt</p>
+          <p>&ltli&gtBullet Point 3&lt&frasl;li&gt</p>
+          <p>&ltli&gtBullet Point 4&lt&frasl;li&gt</p>
+          <p>&lt&frasl;ul&gt</p>
+        </div>
+        <h3>This appears as:</h3>
+        <div>
+          <ul>
+            <li>Bullet Point 1</li>
+            <li>Bullet Point 2</li>
+            <li>Bullet Point 3</li>
+            <li>Bullet Point 4</li>
+          </ul>
+        </div>
+        <h3>Ordered Example:</h3>
+        <div class="inside-html">
+          <p>&ltol&gt</p>
+          <p>&ltli&gtNumbered Point 1&lt&frasl;li&gt</p>
+          <p>&ltli&gtNumbered Point 2&lt&frasl;li&gt</p>
+          <p>&ltli&gtNumbered Point 3&lt&frasl;li&gt</p>
+          <p>&ltli&gtNumbered Point 4&lt&frasl;li&gt</p>
+          <p>&lt&frasl;ol&gt</p>
+        </div>
+        <h3>This appears as:</h3>
+        <div>
+          <ul>
+            <li>Numbered Point 1</li>
+            <li>Numbered Point 2</li>
+            <li>Numbered Point 3</li>
+            <li>Numbered Point 4</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <h2>Paragraphs</h2>
+        <p>The most commonly used HTML tag is <strong>&ltp&gt</strong>, the paragraph tag. When writing your posts in the visual editor, the paragraph tag is automatically created when you put a space between two lines.</p>
+        <p class="inside-html">&ltp&gtThis is a paragraph. It contains a few sentences. With HTML, the paragraphs are surrounded by the paragraph tag.&lt&frasl;p&gt</p>
+      </li>
+      
+      <li>
+        <h2>Line Breaks</h2>
+        <p>Typically when writing out your paragraphs, a blank space will appear between the paragraphs. </p>
+        <p>If you need to manually add a space between text, between an image, or between any other element of your page, use the line break tag &ltbr&frasl;&gt. </p>
+        <p class="inside-html">This&ltbr&frasl;&gtwould&ltbr&frasl;&gtlook&ltbr&frasl;&gtlike&ltbr&frasl;&gtthis.</p>
+        <p>This <br>would <br>look <br> like <br>this.</p>
+      </li>
+
+
+      <li>
+        <h2>Block Quotes</h2>
+        <p>Block quotes will look different depending on your WordPress theme and CSS styling.</p>
+        <p class="inside-html">&ltblockquote&gtPut your text inside a block quote tag.&lt&frasl;blockquote&gt</p>
+        <blockquote>Put your text inside a block quote tag. </blockquote> 
+      </li>
+
+      <li>
+        <h2>Horizontal Lines</h2>
+        <p>If you want to put a horizontal line on your web page, use the <strong>&lthr&frasl;&gt</strong></p>
+        <hr>
+        <p>The line above is what appears when using that horizontal line tag.</p>
+      </li>
+    </ol>
+  </body>
+</html>
