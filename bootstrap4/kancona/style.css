@@ -75,8 +75,8 @@
         background-color: #84240C;
       }
       nav.main-nav {
-        background-image: url(images/border_horizontal.png),
-          url(images/border_horizontal.png);
+        background-image: url("images/border_horizontal.png"),
+          url("images/border_horizontal.png");
         background-repeat: repeat-x;
         background-position: 0px top, 0px bottom;
       }
