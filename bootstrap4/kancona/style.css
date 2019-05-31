@@ -1,0 +1,360 @@
+  /* general styling*/
+      body {
+        background-color: #ffffff;
+      }
+      h2 {
+        font-size: 2.4rem;
+        color: black;
+      }
+      h2 span {
+        color: #246B40;
+        font-size: 4rem;
+      }
+
+      h2, h3 {
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        line-height: 2.4rem;
+
+      }
+      h3 {
+        font-size: 2.2rem;
+      }
+      h3 span {
+        font-size: 1.8rem;
+      }
+      h2 span,
+      h3 span {
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+        color: #246B40;
+        line-height: 3.5rem;
+      }
+
+      /* general styling END*/    
+      /*----------------------------------------------*/    /* Social icons menu*/  
+      .socials ul {
+        list-style: none;
+      }
+      .socials li {
+        padding: 0 .1rem;
+        position: relative;
+        display: inline-block;
+      }
+      .socials ul li a i {
+
+        display: inline-block;
+        vertical-align: top;
+        padding-top: .51rem;
+        font-size: 2rem;
+      }
+      .fa-facebook-square {
+        color: #3b5998;
+      }
+      .fa-twitter-square {
+        color: #38A1F3;
+      }
+      .fab.fa-instagram {
+        color: transparent;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+      .fa-pinterest-square {
+        color: #c8232c;
+      }
+      .fa-youtube {
+        color: #c4302b;
+      }
+      /* Social icons menu END*/    
+      /*----------------------------------------------*/ 
+
+      /** Navigations **/
+      .navigation {
+        background-color: #84240C;
+      }
+      nav.main-nav {
+        background-image: url(images/border_horizontal.png),
+          url(images/border_horizontal.png);
+        background-repeat: repeat-x;
+        background-position: 0px top, 0px bottom;
+      }
+      nav.main-nav .nav-item {
+        transition: background-color .3s ease;
+      }
+      nav.main-nav .nav-item:hover {
+        background-color: #EBAE73;
+        border-radius: 10px;
+      }
+      nav.main-nav .nav-link {
+        font-size: 1.3rem;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+      }
+      #kancona-home {
+        font-weight: 700;
+      }
+
+      /** Navigations END**/
+      /*----------------------------------------------*/ 
+
+      /*Carousal styling*/
+      .carousel .carousel-caption h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;    
+        background-color:rgba(0,0,0,0.3);
+      }
+      .carousel img {
+        background-size: cover;
+      }
+
+      /*Carousal styling END*/
+      /*----------------------------------------------*/  
+      /*Section styling*/
+      .new-website {
+        background-image: url(images/section.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        color: #23B833;
+        min-height: 500px;
+      }
+      .new-website h2 {
+        color: white;
+        background-color: rgba(0,0,0,.5);
+
+      }
+      .new-website h2 span {
+        color: #23B833;
+        line-height: 3.5rem;
+      }
+      .new-website p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        color: white;
+        background-color: rgba(0,0,0,.5);
+      }
+      /*Section styling END*/
+      /*----------------------------------------------*/  
+      /*Image Links styling*/    
+      .image-links img {
+        border: 6px solid white;
+        -weblot-transition: transform.3s ease;
+        -ms-transition: transform.3s ease;
+        transition: transform.3s ease;
+      }
+      .image-links img:hover {
+        -webkit-transform: scale(1.2) rotate(10deg);
+        -ms-transform(1.2) rotate(10deg);
+        transform: scale(1.2) rotate(10deg);
+      }
+      .image-info {
+        background-color: white;
+        margin-top: -50px;
+        opacity: .9;
+      }
+      .image-info .btn-success {
+        background-color: #EBAE73;
+        border: none;
+        border-radius: 0;
+        padding: 1rem 0;
+      }
+      .image-info .btn-success:hover {
+        background-color: #B86C23;
+      } 
+
+      /*Image Links styling END*/    
+      /*----------------------------------------------*/ 
+      /*rabotno vreme styling END*/ 
+      .business-hours {
+        background-color: #246B40;
+        color: #ffffff;
+      }
+      .business-hours h2 {
+        color: #ffffff;
+      }
+      .business-hours table {
+        color: white;
+      }
+      .table {
+        border: 2px solid #EBAE73;
+      }
+      .table td,
+      .table thead th {
+        font-size: 1.2rem;
+        border: none;
+      }
+      .table tbody tr td {
+        padding: .35rem;
+      }
+      .table-danger,
+      .table-hover .table-danger:hover {
+        background-color: #EBAE73;
+      }
+
+      .bg-hours {
+        background-image: url(images/bg_hours.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 300px;            
+      }    
+      /**rabotno vreme styling END**/ 
+      /*----------------------------------------------*/ 
+      /**Products styling**/ 
+      .products h2 {
+        line-height: 3rem;
+      }
+      .products .card a {
+        color: #000;      
+      }
+      .products .card a:hover {
+        text-decoration: none;    
+      }
+      .products .card h3 {
+        font-size: 1.3rem;
+        color: #23B833;
+        min-height: 4rem;
+        max-height: 4rem;
+        line-height: 1.5rem;
+      }
+      .products .card p {
+        font-size: .9rem;
+        line-height: 1.3rem;
+        min-height: 4rem;
+        max-height: 4rem;
+      }
+      .products .card p.price {
+
+        font-size: 1.8rem;
+        font-family: 'Open Sans', sans-serif;
+        color: #979797;
+
+      }
+
+
+
+
+
+      /**Products styling END**/ 
+      /*----------------------------------------------*/   
+      /**Appointment**/ 
+      /*.appointment {
+      background-image: url(bg_appointment.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;        
+      color: white;*/
+      }
+      @media (min-width: 992px) {
+        .appointment, .new-website, .bg-hours {
+          background-size: cover;
+        }
+      }
+      .appointment h3{
+        font-size: 3.5rem;
+        color: #246B40;
+        line-height: 4rem;        
+      }
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        line-height: 2.6rem;
+      }
+      .appointment .btn-warning {
+        background-color: #EBAE73;
+        border: none;
+        border-radius: 0;
+        padding: 1rem 5rem;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+      }
+      .appointment .btn-warning:hover {
+        background-color: #B86C23;
+      }
+
+      /**Appointment END**/ 
+      /*----------------------------------------------*/ 
+      /**Footer**/ 
+      .site-footer{
+        background-color: #191919;
+      }
+      .site-footer p.copyright {
+        font-family: 'Open Sans', sans-serif;
+        color: #979797;      
+      }
+      .site-footer h5 a {
+
+        color: ghostwhite;
+
+
+      }
+      #telefon {
+        font-size: 1.4em;
+      }
+      .site-footer hr {
+        background-color: gray;
+      }
+      .site-footer h3 {
+        line-height: 1.2rem;
+        font-size: 1.2rem;
+        color: darkgray;
+        min-height: 1.2rem;
+        max-height: 1.2rem;        
+      }
+      .site-footer p{
+        font-size: 1rem;
+        color: white;
+        line-height: normal;
+      }
+      .f-socials ul {
+        list-style: none;
+      }
+      .f-socials li {
+        padding: 0 .1rem;
+        position: relative;
+        display: block;
+      }
+      .f-socials ul li a i {
+
+        display: inline-block;
+        vertical-align: top;
+        padding-top: .6rem;
+        font-size: 1.5rem;
+      }
+      /**Footer END**/ 
+
+      /***fancy lines***/
+
+      .fancy {
+        line-height: 0;
+        text-align: center;
+      }
+      .fancy span {
+        opacity: .3;
+        display: inline-block;
+        position: relative;  
+      }
+      .fancy span:before,
+      .fancy span:after {
+        content: "";
+        position: absolute;
+        height: .4rem;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        top: 35%;
+        width: 15vw;
+      }
+      .fancy span:before {
+        right: 100%;
+        margin-right: 1rem;
+      }
+      .fancy span:after {
+        left: 100%;
+        margin-left: 1rem;
+      }
+
+      /**********fancy lines end************/
