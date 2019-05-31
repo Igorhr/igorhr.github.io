@@ -1,0 +1,5 @@
+#B86C23 orange
+#EBAE73 cream
+#84240C wood bordo
+#246B40 dark green
+#23B833 light green
