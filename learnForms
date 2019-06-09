@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <!--<meta http-equiv="refresh" content="2"> -->
+	<title>Form Building with names</title>
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<a href="index.html">back</a>
+	<h1>how</h1>
+	
+	
+	<form method="post">
+		First Name: <input type="text" name="firstname"><br>
+	  Last Name: <input type="text" name="lastname"><br>
+	  Email: <input type="email" required name="password"><br>
+	  Password: <input type="Password" min="5"><br>
+	  Birthday: <input type="date" name="birthday"><br>
+	  Gender: <br>
+	  <input type="radio" value="male" name="Gender">Male<br>
+	  <input type="radio" value="female" name="Gender">Female<br>
+	  <input type="radio" value="ohter"  name="Gender">Other<br>
+	  Pets: <br>
+	  <input type="checkbox" value="cat" name="Pet1">Cat <br>
+	  <input type="checkbox" value="dog" name="Pet2">Dogs <br>
+	  
+	  Cars: <br>
+	  <select name="Cars">
+	  	<option value="volvo">Volvo</option>
+	  	<option value="BMW">BMW</option>
+	  </select>
+	   <br>
+
+
+	  <input type="submit" value="Register">
+	  <input type="reset" name="">
+	</form>
+
+</body>
+</html>
