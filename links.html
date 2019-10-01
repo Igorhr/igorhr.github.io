@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title></title>
+	<style>
+		body {
+			background-color: #3aafa9;
+			
+		}
+		h1 {
+			font-family: cursive;
+			font-weight: bolder;
+			color: yellow;			
+			width: 70%;
+			border-bottom: 3px solid #2b7a78;
+			border-right: 3px solid #2b7a78;
+			box-shadow: 3px 3px 3px #17252a;				
+		}
+		h5.card-title {
+			text-align: right;
+			font-weight: bold;
+			color: #2b7a78;
+			border-bottom: 3px solid #2b7a78
+			border-right: 3px solid #2b7a78;
+			box-shadow: 3px 3px 3px #17252a;
+			width: 65%;	
+			padding-right: .3rem;
+		}
+		.card {
+			
+			border-bottom: 3px solid #2b7a78;
+			border-right: 3px solid #2b7a78;
+			box-shadow: 3px 3px 3px #17252a;
+			background-color: #def2f1;
+			transition: all 1s;
+		}
+		.card:hover {
+			transform:scale(1.1);
+		}
+		.btn-info {
+			background-color: #2b7a78;
+			
+			border-bottom: 3px solid #2b7a78;
+			border-right: 3px solid #2b7a78;
+			box-shadow: 3px 3px 3px #17252a;
+		}		
+		.btn-info:active {
+			margin-top: 3px;
+			margin-bottom: -3px;
+		}
+		.card-columns {
+			@include media-breakpoint-only(lg) {
+				column-count: 5;
+			}
+			@include media-breakpoint-only(xl) {
+				column-count: 1;
+			}
+		}
+		h6 {
+			font-weight: bold;
+			font-style: italic;
+			color: #17252a;
+			text-align: right;
+			margin-right: 1rem;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	
+	<a href="index.html" type="button" class="m-2 btn btn-outline-dark">home</a>
+	
+	
+	<div class="container-fluid ml-1 mr-1 p-0">
+		<h1 class="text-uppercase text-right pr-2">Usefull links</h1>
+		<div class="mt-4 row">
+
+			<!-----------CARDS LINKS--------------->
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>all code</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="https://www.freecodecamp.org/" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">freeCodeCamp</h5>
+						<p class="card-text text-justify">Learn to code with free online courses, programming projects, and interview preparation for developer jobs.</p>
+						<a target="_blank" href="https://www.freecodecamp.org/" class="btn btn-block btn-info">Go to freecodecamp.org</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>css</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="https://css-tricks.com" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">Css-Tricks</h5>
+						<p class="card-text text-justify">Tips, Tricks, and Techniques on using Cascading Style Sheets, with Snippets, Almanac for all css atributes and more</p>
+						<a target="_blank" href="https://css-tricks.com" class="btn btn-block btn-info">Go to css-tricks.com</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>css</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="http://www.cssdrive.com/" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">CSS Drive</h5>
+						<p class="card-text text-justify">Hundreds of the best web site designs for your inspiration. Also, top menu designs and the best Wordpress themes directory.</p>
+						<a target="_blank" href="www.cssdrive.com/" class="btn btn-block btn-info">Go to cssdrive.com</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>bootstrap snipets</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="https://bootsnipp.com/" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">Bootsnipp</h5>
+						<p class="card-text text-justify">A design element gallery for web designers and web developers. Find snippets using HTML, CSS, Javascript, jQuery, and Bootstrap.</p>
+						<a target="_blank" href="https://bootsnipp.com" class="btn btn-block btn-info">Go to bootsnipp.com</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>web tutorials</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="https://www.quackit.com/" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">Quackit</h5>
+						<p class="card-text text-justify">Free web development/design tutorials. Includes CSS, Javascript, AJAX, ColdFusion, and HTML tutorials, code examples, layout help and references. Complete ...</p>
+						<a target="_blank" href="https://www.quackit.com/" class="btn btn-block btn-info">Go to quackit.com</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>bootstrap snipets</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="https://www.bootdey.com/" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">Bootdey</h5>
+						<p class="card-text text-justify">You can create and share free bootstrap snippets, themes, templates, UI design elements,
+						lot of components built with bootstrap framework</p>
+						<a target="_blank" href="https://www.bootdey.com/" class="btn btn-block btn-info">Go to bootdey.com</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>bootstrap snipets and themes</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="https://startbootstrap.com/" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">Start Bootstrap</h5>
+						<p class="card-text text-justify">Start Bootstrap develops free to download, open source Bootstrap 4 themes, templates, and snippets and creates guides and tutorials to help you learn more ...</p>
+						<a target="_blank" href="https://startbootstrap.com/" class="btn btn-block btn-info">Go to startbootstrap.com</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>free images</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="https://www.pexels.com/" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">Pexels</h5>
+						<p class="card-text text-justify">Free stock photos you can use everywhere. Free for commercial use, No attribution required.</p>
+						<a target="_blank" href="https://www.pexels.com/" class="btn btn-block btn-info">Go to pexels.com</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="card h-100 text-center mx-1" style="width: 18rem;">
+					<h6>free bootstrap themes</h6>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+						src="https://themehunt.com" allowfullscreen></iframe>
+					</div> 
+					<div class="card-body">
+						<h5 class="card-title">Themes hunt</h5>
+						<p class="card-text text-justify">Download Free Bootstrap Templates and Free WordPress Themes. All templates and themes are responsive in design and premium in quality and available for ...</p>
+						<a target="_blank" href="https://themehunt.com" class="btn btn-block btn-info">Go to themehunt.com</a>
+					</div>
+				</div><!--card End-->
+			</div>
+
+
+			<!-----------CARDS LINKS END--------------->
+
+		</div><!--col End-->
+
+	</div>
+	<!--container End-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
