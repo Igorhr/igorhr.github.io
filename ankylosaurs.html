@@ -2,29 +2,61 @@
 <html>
   <head>
     <title>learn HTML</title>
-    <link rel="stylesheet" type="text/css" href="ankylosaurs.css">
+    <style>
+    div#header {
+      position: absolute;
+      width: 100%;
+      background-color: burlywood;
+      top: 0;
+      left: 0;
+    }
+    div#header img{
+      float: left;
+    margin-top: 2%;
+        margin-left: 1%;
+    }
+    div#header h1 {
+        font-weight: 900;
+        font-size: 2em;
+        text-align: left;
+    }
+    
+    div#hheader {
+      width: 100%;
+      background-color: burlywood;
+      visibility: hidden;
+    }
+    div#hheader img{
+      float: left;
+        visibility: hidden;
+    }
+
+    p.clearFloat {
+        clear:both;
+    }
+    </style>
   </head>
   <body>
     <div id="header">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Ankylosaurus_magniventris_reconstruction.png" width="100">
       <h1>ankylosaurs</h1>
     </div>
-      
+
     <div id="hheader">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Ankylosaurus_magniventris_reconstruction.png" width="100">
       <h1>ankylosaurs</h1>
     </div>
-      
+
     <p class="clearFloat"></p>
-      
-      
+
+
     <p>some of the best dions</p>
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
+
   </body>
 </html>
