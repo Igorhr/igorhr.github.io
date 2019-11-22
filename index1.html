@@ -1,41 +1,134 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style>
+      body {
+        background-color: black;
+        color: darkblue;
+      }
+      div  {
+
+        //  border: .02px solid red;
+      }
+      div#prvRed {
+        background-color: lightskyblue;
+      }
+      div#vtorRed {
+        background-color: ghostwhite;
+      }
+      div#tretRed, #cetvrtRed {
+        background-color: ghostwhite;
+      }
+
+
+    </style>
+  </head>
   <body>
-      <div id = headerBody>
-        <h1>Learn websites & Coding</h1>
+    <div class="container">
+
+      <div id="prvRed" class="row">
+        <div class="col-xs-12">
+          <h1>Learn websites & Coding!</h1>
+          <p>My random projects links.</p>
+          <button type="button" class="btn btn-primary">learn More >></button>
+          <p></p>
+          <br>
+
+        </div>
       </div>
-      <div id = allBody>
-        <img alt="Solar sys" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Solar_sys.jpg/512px-Solar_sys.jpg">
-        <p>My random projects links</p>
-        <ul>
-          <li>Се за <a href="dinosaurs.html">диносаурусите</a></li>
-          <li>Се за <a href="universe.html">универзумот</a></li>
-          <li>Се за <a href="/ite/ite.html">Interaktivna tabela na elementite</a></li> 
-            <li><a href="/itemk/itemk.html">Интерактивна табела на хемијските елементи</a></li> 
-           <li>Се за <a href="learnCode/learnHtml.html">кодирање HTML</a></li>
-        </ul>
-    
-    <h3>Top best links </h3>
-    
-    <ol>
-       
-        <li>nekoja list</li>
-        <li>druga lista</li>
-        <li>treta lista</li>
-    </ol>
-    
-    
+
+      <div id="vtorRed" class="row">
+        <div class="col-sm-4">
+          <h2>Игра Меморија</h2>
+          <p>Меморија</p>
+          <a class="btn btn-default" href="/games/memory/index.html" role="button"><img scr="games/memory/images/11.jpg">Играј »</a>
+          <br>
+          <p></p>
+        </div>
+        <div class="col-sm-4">
+          <h2>tabela na elementite</h2>
+          <p>Interaktivna tabela na elementite.</p>
+          <a class="btn btn-default" href="/ite/ite.html" role="button">Pokazi detalite »</a>
+          <br>
+          <p></p>
+        </div>
+        <div class="col-sm-4">
+        <h2>Интерактивна табела</h2>
+        <p>Интерактивна табела на хемијските елементи.</p>
+        <a class="btn btn-default" href="/itemk/itemk.html" role="button">Learn more »</a>
+        <br>
+        <p></p>
+        </div>
+      </div>
+
+      <div id="tretRed" class="row">
+        <div class="col-sm-4">
+          <h2>Dragons</h2>
+          <p>Nesto za Dragons.</p>
+          <a class="btn btn-danger" href="/bootstrap3/dragonsLanding.html" role="button">Drakarys&#128293;</a>
+          <br>
+          <p></p>
+        </div>
+        <div class="col-sm-4">
+          <h2>DINOSAURS WORLD</h2>
+          <p>Dino land new</p>
+          <a class="btn btn-success" href="/bootstrap3/dinoLand.html" role="button">ENTER »</a>
+          <br>
+          <p></p>
+        </div>
+        <div class="col-sm-4">
+        <h2>Ресторант Канцона</h2>
+        <p>Веб сајт за ресторант</p>
+        <a class="btn btn-info" href="/bootstrap4/kancona/index.html" role="button">Кон Канцона »</a>
+        <br>
+        <p></p>
+        </div>
+      </div>
+
+       <div id="cetvrtRed" class="row">
+        <div class="col-sm-4">
+          <h2>HTML 5</h2>
+          <p>Научи HTML 5</p>
+          <a class="btn btn-default" href="learnCode/index.html" role="button">Pokazi detalite »</a>
+          <br>
+          <p></p>
+        </div>
+ <div class="col-sm-4">
+          <h2>диносаурусите</h2>
+          <p>Nesto za dinosaurusi.</p>
+          <a class="btn btn-default" href="dinosaurs.html" role="button">Pokazi detalite »</a>
+          <br>
+          <p></p>
+        </div>
+         <div class="col-sm-4">
+        <h2>Корисни линкови</h2>
+        <p>Разни корисни линкови од повеке области</p>
+        <a class="btn btn-default" href="links.html" role="button">Кон Линковите »</a>
+        <br>
+        <p></p>
+        </div>
+      </div>
+
+
     </div>
-      
-    <div id = footherBody>
-      <h2>Basic info</h2>
-      <p>Rabbits are little creatures with long ears and puffy tails, and they move their nose up and down in an adorable way.
-        They eat the most orange vegetables in <em>our</em> world, and <strong>they reproduce more than any human <em>ever</em>
-        has</strong>.</p>
-  
-    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

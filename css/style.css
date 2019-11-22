@@ -1,0 +1,347 @@
+
+/* Color Theme Swatches in Hex */ /*
+.Huston--we-have-a-problem-1-hex { color: #001528; }
+.Huston--we-have-a-problem-2-hex { color: #003357; }
+.Huston--we-have-a-problem-3-hex { color: #006291; }
+.Huston--we-have-a-problem-4-hex { color: #72C900; }
+.Huston--we-have-a-problem-5-hex { color: #FFFFFF; }
+
+/* Color Theme Swatches in RGBA *//*
+.Huston--we-have-a-problem-1-rgba { color: rgba(0, 21, 40, 1); }
+.Huston--we-have-a-problem-2-rgba { color: rgba(0, 51, 87, 1); }
+.Huston--we-have-a-problem-3-rgba { color: rgba(0, 98, 145, 1); }
+.Huston--we-have-a-problem-4-rgba { color: rgba(114, 201, 0, 1); }
+.Huston--we-have-a-problem-5-rgba { color: rgba(255, 255, 255, 1); }
+
+/**********  IMPORTS      *************/
+@import url('https://fonts.googleapis.com/css?family=Philosopher:300,400,700|Roboto:200,300,400,900&display=swap');
+/********** IMPORTS END  *************/
+
+/************************/
+
+/**********  GLOBAL      *************/
+* { box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+body {
+
+
+}
+
+h2 {
+    text-transform: lowercase;
+    padding: 1px 0;
+    font-size: 2.5em;
+    color: #72C900;
+    font-weight: 400;
+    margin: 20px 0; 
+    letter-spacing: 18px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #003357; 
+    text-shadow: 2px 2px 2px #003357;
+}
+
+/**********  GLOBAL END      *************/
+
+/************************/
+
+/**********  HEADER      *************/
+header {
+    height: 99vh;
+    background-image: linear-gradient(to bottom, #091026, #132340, #1d385b, #244d78, #286496, #3676a8, #4488b9, #529acb, #6caad5, #85bade, #9ecbe8, #b6dbf2);
+}
+
+header div {
+    text-shadow: 1px 1px 1px #003357;
+}
+header div p {
+    font-size: 2.2rem;
+    color: #72C900;
+    text-shadow: 4px 2px 3px black;
+}
+
+h1 {
+    font-family: 'Philosopher', sans-serif;
+    color: #72C900;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 4px 2px 3px black;
+}
+/**********  HEADER END *************/
+
+/************************/
+
+/**********  NAV     *************/
+nav   {  background-image: linear-gradient( #091026, #132340, #1d385b, #244d78);
+         box-shadow: 0 0 10px 2px #006291;
+         border: 1px solid #006291;
+} 
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #72C900;
+    /* text-shadow: 1px 1px 5px #2D3642;*/
+    letter-spacing: 2px;
+    font-weight: 400;
+    transition: all .4s;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #72C900;
+    transform: scale(1.1) translate(0, -5px);
+}
+
+nav.navbar a.navbar-brand {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #72C900;
+    text-transform: uppercase;
+    text-shadow: 4px 2px 3px black;
+    transform: rotate(-1deg);
+    transition: all .4s ease;
+}
+.navbar-dark .navbar-brand:hover {
+    color: #72C900;
+    transform: translateX(5px) scale(1.1) rotate(-2deg);
+
+}
+/*style the logo brand*/
+.fa-bars {
+    font-size: 30px;
+    color: #72C900;
+    text-shadow: 2px 2px 5px #2D3642;
+}
+.fa-bars:hover {
+    color: #006291;
+}
+
+/**********  NAV  END ***************/
+
+/************************/
+/**********  ABOUT ***************/
+#about-text{
+    color: #72C900;
+    border-right: 1px solid white;
+    background-image: linear-gradient( #091026, #132340, #1d385b, #244d78);
+}
+#about-img {
+    background: url("https://images.pexels.com/photos/2873671/pexels-photo-2873671.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")  no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    border-right: 1px solid white;
+}
+
+/**********  ABOUT  END ***************/
+/************************/
+
+/**********  SKILLS      *************/
+#skills {
+
+}
+hr {
+    color: #289ED8;
+    width:70%;
+}
+a {color: #001528;}
+
+.card{
+    background-color: #FFFFFF;
+    padding: 0;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card:hover{
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    color: yellow;
+}
+.card img {
+    height: 150px;
+} 
+.card h5 {
+    color: #003357;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.card p {
+    color: #006291;
+    font-weight: 300;
+}
+/**********  SKILLS END     *************/
+
+/************************/
+
+/**********  PORTFOLIO    *************/
+section#portfolio-gallery {
+    background: #FFFFFF;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background-color: #003357;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #72C900;
+    font-weight: 400;
+    transition: all .4s;
+    border: 1px solid #001528;
+}
+
+.btn:hover {
+    background-color: #003357;
+    color: #FFF;
+    box-shadow: 0 0 1px  #001528;
+    transform: scale(1.1) translateY(-2px);
+}
+.btn.active {
+    background-color: #006291;
+    color: #001528;
+}
+.embed-container { position: relative;
+                   padding-bottom: 100%;
+                   height: 0; overflow: hidden; 
+                   max-width: 100%; 
+                   min-height: 100%; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.column h5 {
+    border-bottom: thin solid #289ED8; 
+}
+/**********  PORTFOLIO END   *************/
+
+/************************/
+
+/**********  Socials     *************/
+
+#awesome-socials h3 {
+    color: #006291;
+    font-weight: 300;
+}
+#awesome-socials i {
+    font-size: 30px;
+    color: #006291;
+    transition: transform .3s;
+    text-shadow: 1px 1p 4px #2D3642;
+}
+#awesome-socials  i.fa-facebook-square:hover {
+    color: #3b5998;
+    transform: scale(1.5);
+}
+#awesome-socials  i.fa-twitter:hover {
+    color: #55acee;
+    transform: scale(1.5);
+}
+#awesome-socials  i.fa-github:hover {
+    color: #211f1f;
+    transform: scale(1.5);
+}
+#awesome-socials  i.fa-envelope:hover {
+    color: #D44638;
+    transform: scale(1.5);
+}
+#awesome-socials i.fa-linkedin:hover {
+    color: #0077B5;
+    transform: scale(1.5);
+}
+#awesome-socials i.fa-codepen:hover{
+    color: #1A1B1A;
+    transform: scale(1.5);
+}
+
+/**********  Socials END    *************/
+
+/**********  FOOTER    *************/
+footer {
+    background: rgba(0, 21, 40, .97);
+    border-top: 8px solid #006291;
+    color: #289ED8;
+    height:100%;
+}
+
+footer a {
+    color: #72C900;
+    text-decoration: none !important;
+}
+
+footer ul.social li a:hover{
+    color: #289ED8;
+}
+
+footer p {
+    color: rgba(0, 98, 145, .91);
+}
+/* social icons color hover*/
+.footer-copyright {
+    background-color: #001528;
+}
+
+/**********  FOOTER END   *************/
+
+/**********  MEDIA   *************/
+@media (max-width: 560px) {
+    #awesome-socials i, h3 {
+        font-size: 20px;}
+    /* #awesome-socials h3 {
+    font-size: 20px;} */
+}
+
+
+@media (max-width: 767px) {
+    #collapsibleNavbar a {
+        color: white;
+        width: 95%;
+        border-bottom: 3px solid #72C900;
+        border-bottom-right-radius: 15px;
+        padding-bottom: 0;
+    }
+    #collapsibleNavbar a:hover {
+        transform: translateX(15px);
+        color: #72C900;
+    }
+    .btn {
+        font-weight: 400;
+        padding: 6px 15px;
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .card img {
+    }
+}
+@media (min-width: 1400px){
+    .card img {
+        height: 250px;
+    }
+} 
+/**********  MEDIA END   *************/
