@@ -32,10 +32,10 @@ h2 {
     font-size: 2.5em;
     color: #72C900;
     font-weight: 400;
-    margin: 20px 0; 
+    margin: 20px 0;
     letter-spacing: 18px;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #003357; 
+    box-shadow: 1px 1px 10px #003357;
     text-shadow: 2px 2px 2px #003357;
 }
 
@@ -73,7 +73,7 @@ h1 {
 nav   {  background-image: linear-gradient( #091026, #132340, #1d385b, #244d78);
          box-shadow: 0 0 10px 2px #006291;
          border: 1px solid #006291;
-} 
+}
 
 .navbar-dark .navbar-nav .nav-link {
     font-size: 20px;
@@ -159,7 +159,7 @@ a {color: #001528;}
 }
 .card img {
     height: 150px;
-} 
+}
 .card h5 {
     color: #003357;
     text-transform: uppercase;
@@ -184,7 +184,7 @@ section#portfolio-gallery {
     display: none; /* Hide all elements by default */
 }
 
-/* Clear floats after rows */ 
+/* Clear floats after rows */
 .row:after {
     content: "";
     display: table;
@@ -227,14 +227,15 @@ section#portfolio-gallery {
     background-color: #006291;
     color: #001528;
 }
-.embed-container { position: relative;
+.embed-container {
+  position: relative;
                    padding-bottom: 100%;
-                   height: 0; overflow: hidden; 
-                   max-width: 100%; 
-                   min-height: 100%; } 
+                   height: 0; overflow: hidden;
+                   max-width: 100%;
+                   min-height: 100%; }
 .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .column h5 {
-    border-bottom: thin solid #289ED8; 
+    border-bottom: thin solid #289ED8;
 }
 /**********  PORTFOLIO END   *************/
 
@@ -307,12 +308,6 @@ footer p {
 /**********  FOOTER END   *************/
 
 /**********  MEDIA   *************/
-@media (max-width: 560px) {
-    #awesome-socials i, h3 {
-        font-size: 20px;}
-    /* #awesome-socials h3 {
-    font-size: 20px;} */
-}
 
 
 @media (max-width: 767px) {
@@ -334,14 +329,32 @@ footer p {
 
     .card {
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
     }
     .card img {
+    }
+    .column {
+margin: 0 0;
+        width: 50%;
+
     }
 }
 @media (min-width: 1400px){
     .card img {
         height: 250px;
     }
-} 
+}
+
+@media (max-width: 560px) {
+    #awesome-socials i, h3 {
+        font-size: 20px;}
+        .column {
+
+            width:90%;
+margin: 0 auto;
+        }
+    /* #awesome-socials h3 {
+    font-size: 20px;} */
+}
+
 /**********  MEDIA END   *************/
