@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Oswald:300,400,500,600,700|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+    <title>Slideshow</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+      }
+      .banner {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        overflow: hidden;
+      }
+      .banner::after {
+        content: '';
+        width: 250%;
+        height: 100%;
+        background: linear-gradient(to right, transparent, #000, #000);
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: bannerAnim 3s linear forwards;
+      }
+
+      @keyframes bannerAnim {
+        0% {right: 0}
+        100% {right: -250%}
+      }
+      .banner h1 {
+        color: #91130f;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 120px;
+        margin-bottom: 100px;
+        border-top: 5px solid #91130f;
+        border-bottom: 5px solid #91130f;
+      }
+      .banner button {
+        width: 230px;
+        padding: 10px;
+        background: linear-gradient(to right, #440402, #c0120c);
+        font-family: 'Dosis', sans-serif;
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 100px;
+        transform: perspective(500px) rotateY(-15deg);
+        text-shadow: 6px 3px 2px rgba(0,0,0,.3);
+        cursor: pointer;
+        overflow: hidden;
+        animation: buttonAnim 1s 2.5s backwards;
+        transition: all .5s;
+      }
+      .banner button:hover{
+        transform: perspective(500px) rotateY(15deg);
+        text-shadow: -6px 3px 2px rgba(0,0,0,.3);
+        background: linear-gradient(to left, #440402, #c0120c);
+      }
+      @keyframes buttonAnim {
+        0% {opacity: 0}
+        100% {opacity: 1}
+      }
+      .banner button::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, transparent, #fff, transparent);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transform: skewX(-30deg);
+        transition: left .5s;
+      }
+      
+      .banner button:hover::before {
+        left: 100%;
+      }
+      
+      .slideshow-wrapper {
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        
+        transition: opacity 1s;
+      }
+      .slideshow {
+        display: flex;
+        width: 500%;
+        height: 100%;
+        position: relative;
+        
+      }
+      @keyframes slideshow {
+        0% {left: 0}
+        10% {left: 0}
+        15% {left: -100%}
+        25% {left: -100%}
+        30% {left: -200%}
+        40% {left: -200%}
+        45% {left: -300%}
+        55% {left: -300%}
+        60% {left: -400%}
+        70% {left: -400%}
+        73% {left: -300%}
+        76% {left: -300%}
+        82% {left: -200%}
+        88% {left: -200%}
+        91% {left: -100%}
+        94% {left: -100%}
+        97% {left: 0}
+
+      }
+      .slide {
+        width: 100%;
+        height: 100vh;
+      }
+      .slide:nth-child(1) {
+        background: linear-gradient(100deg, rgba(38,38,38,.8), rgba(38,38,38,.3), transparent), url(https://wallpaperaccess.com/full/823023.jpg) center no-repeat;
+        background-size: cover;
+      }
+      .slide:nth-child(2) {
+        background: linear-gradient(100deg, rgba(38,38,38,.8), rgba(38,38,38,.3), transparent),  url(https://thewallpaper.co//wp-content/uploads/2016/10/rivendell-the-lord-of-the-rings-movie-hd-wallpaper-backgrounds.jpg) center no-repeat;
+        background-size: cover;
+      }
+      .slide:nth-child(3) {
+        background: linear-gradient(100deg, rgba(38,38,38,.8), rgba(38,38,38,.3), transparent),  url(https://vignette.wikia.nocookie.net/lotr/images/e/e4/Minas_Tirith.jpg/revision/latest?cb=20141228214636) center no-repeat;
+        background-size: cover;
+      }
+      .slide:nth-child(4) {
+        background: linear-gradient(100deg, rgba(38,38,38,.8), rgba(38,38,38,.3), transparent),  url(https://wallpapercave.com/wp/wp2374409.jpg) center no-repeat;
+        background-size: cover;
+      }
+      .slide:nth-child(5) {
+        background: linear-gradient(100deg, rgba(38,38,38,.8), rgba(38,38,38,.3), transparent),  url(https://wallpaperaccess.com/full/796502.jpg) center no-repeat;
+        background-size: cover;
+      }
+      .content {
+        width: 500px;
+        position: relative;
+        top: 35%;
+        left: 5%;
+      }
+      .content h3 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        color: #fff;
+      }
+      .content p {
+        font-family: 'Dosis', sans-serif;
+        font-size: 20px;
+        color: #ccc;
+      }
+      .content button {
+        width: 130px;
+        padding: 10px 10px 0 0;
+        cursor: pointer;
+        margin-top: 30px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: white;
+        border-bottom: 1px solid white;
+      }
+      .content i {
+        margin-left: 8px;
+      }
+      @media(max-width: 1000px) {
+        .banner h1 {
+          font-size: 80px;
+        }
+      }
+      @media(max-width: 750px) {
+        .banner h1 {
+          font-size: 40px;
+          margin-bottom: 60px;
+        }
+        .banner button {
+          width: 180px;
+          padding: 7px;
+          font-size: 20px;
+        }
+        .content {
+          width: 300px;
+        }
+        .content h3 {
+          font-size: 30px;
+        }
+        .content p {
+          font-size: 15px;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <h1>MiddleEarth</h1>
+        <button type="button">Begin</button>
+      </div>
+      <div class="slideshow-wrapper">
+        <div class="slideshow">
+          <div class="slide">
+            <div class="content">
+
+              <h3>Shire</h3>
+              <p>The Shire was the homeland of the majority of the Hobbits in Middle-earth. It was located in the northwestern portion of Middle-earth, in the northern region of Eriador, within the remains of the Kingdom of Arnor.
+                At the end of the Third Age, Saruman (known then as Sharkey) tried to take control of it for a very short period, but was killed in the Battle of Bywater, which ended the War of the Ring. .</p>
+              <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div> <!-- slide END -->
+          <div class="slide">
+            <div class="content">
+
+              <h3>Rivendell</h3>
+              <p>Rivendell, also known as Imladris, was an Elven town and the house of Elrond located in Middle-earth. It is described as "The Last Homely House East of the Sea" in reference to Valinor, which was west of the Great Sea in Aman.
+                The peaceful, sheltered town of Rivendell was located at the edge of a narrow gorge of the river Bruinen (one of the main approaches to Rivendell comes from the nearby Ford of Bruinen), but well hidden in the moorlands and foothills of the Misty Mountains.</p>
+              <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div> <!-- slide END -->
+          <div class="slide">
+            <div class="content">
+
+              <h3>Gondor</h3>
+              <p>Gondor was the most prominent kingdom of Men in Middle-earth, bordered by Rohan to the north, Harad to the south, the cape of Andrast and the Sea to the west, and Mordor to the east. Its first capital was Osgiliath, moved to Minas Tirith in TA 1640. The city of Minas Tirith remained the capital of Gondor for the rest of the Third Age and into years of the Fourth Age; other major fortresses included Dol Amroth in Belfalas and Osgiliath, which was a city on the Anduin.</p>
+              <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div> <!-- slide END -->
+          <div class="slide">
+            <div class="content">
+
+              <h3>Lonely Mountain</h3>
+              <p>The Lonely Mountain was a subterranean Dwarven city which, in the latter half of the Third Age, became the greatest city in Middle-earth. It was named "Erebor" in Sindarin.
+                It was located northeast of Rhovanion, near the Iron Hills, and was the source of the River Running..</p>
+              <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div> <!-- slide END -->
+          <div class="slide">
+            <div class="content">
+
+              <h3>Mordor</h3>
+              <p>Mordor was a black, volcanic plain located in the southeast of Middle-earth to the East of Gondor, Ithilien and the great river Anduin. Mordor was chosen by Sauron to be his realm because of the mountain ranges surrounding it on three sides, creating a natural fortress against his enemies.</p>
+              <button type="button">Read More <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div> <!-- slide END -->
+        </div> <!-- slideshow END -->
+      </div>
+    </div>
+
+    <script>
+     document.querySelector('.banner button').addEventListener('click', () => {
+        document.querySelector('.banner').style.display = 'none';
+        document.querySelector('.slideshow-wrapper').style.cssText = 'opacity: 1; visibility: visible';
+        document.querySelector('.slideshow').style.animation = 'slideshow 30s infinite';
+      });
+
+    </script>
+  </body>
+</html>
