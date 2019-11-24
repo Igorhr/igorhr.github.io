@@ -1,119 +1,128 @@
 <!DOCTYPE html>
 <html lang="mkd">
-  <head>
-    <meta charset="UTF-8">
-    <title>Игра Меморија</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+<head>
+  <meta charset="UTF-8">
+  <title>Игра Меморија</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #wrapper {
+      background: #2980B9;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      text-align: center;
+      width: 100%;
+      height: auto;
+    }
 
-      #wrapper {
-        background: #2980B9;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        text-align: center;
-        width: 100%;
-        height: auto;
-      }
+    .btn {
+      background: #3498db;
+      text-align: center;
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 20vw;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+      margin: 2vw;
+      width: 40%;
+    }
 
-      .btn {
-        background: #3498db;
-        text-align: center;
-        -webkit-border-radius: 28;
-        -moz-border-radius: 28;
-        border-radius: 28px;
-        font-family: Arial;
-        color: #ffffff;
-        font-size: 20vw;
-        padding: 10px 20px 10px 20px;
-        text-decoration: none;
-        margin: 2vw;
-        width: 40%;
+    .btn:hover {
+      background: #3cb0fd;
+      text-decoration: none;
+    }
 
+    .btn img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1vw;
+      margin-bottom: 0;
+    }
 
-      }
-      .btn:hover {
-        background: #3cb0fd;
-        text-decoration: none;
-      }
-      .btn img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 1vw;
-        margin-bottom: 0;
-      }
-      .btn h2 {
-       font-size: .5em;
-        margin: 0;
-      }
-      .flipImage{
-        -webkit-box-shadow: 5px 6px 1px -3px rgba(0,0,0,0.39);
-        box-shadow: 5px 6px 1px -3px rgba(0,0,0,0.39);
-        width: 29vw;
+    .btn h2 {
+      font-size: .5em;
+      margin: 0;
+    }
 
-      }
-      .gameTile{
-        display: inline-block;
-        border: none;
-        margin: .4vh;
+    .flipImage {
+      -webkit-box-shadow: 5px 6px 1px -3px rgba(0, 0, 0, 0.39);
+      box-shadow: 5px 6px 1px -3px rgba(0, 0, 0, 0.39);
+      width: 29vw;
+    }
 
-      }
-      #restart {
-        font-size: 7vw;
-      }
-      #linkovi {
-        margin: 5vh auto;
-        display: none;
-      }
-      #linkovi div {
-        display:  inline-block;
-        margin: 3vw;
-      }
-      .links {
-        border: 5px solid black;
-      }
-      #pocni {
-        width: 90%;
-        margin: 3vw;
-              }
-    </style>
-  </head>
+    .gameTile {
+      display: inline-block;
+      border: none;
+      margin: .4vh;
 
+    }
 
-  <body>
+    #restart {
+      font-size: 7vw;
+    }
 
+    #linkovi {
+      margin: 5vh auto;
+      display: none;
+    }
 
-    <div id="wrapper">
-      <div id="header">
-        <h1>М Е М О Р И Ј А</h1>
-        <audio controls autoplay>
+    #linkovi div {
+      display: inline-block;
+      margin: 3vw;
+    }
 
-  <source src="images/The_Lion_King_-_Circle_Of_Life.mp3.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+    .links {
+      border: 5px solid black;
+    }
+
+    #pocni {
+      width: 90%;
+      margin: 3vw;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="header">
+      <h1>М Е М О Р И Ј А</h1>
+
+      <!--<audio controls autoplay>
+        <source src="images/The_Lion_King_-_Circle_Of_Life.mp3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>-->
+
+    </div>
+
+    <div id="pocni">
+      <div id="start" class="btn"><img src="images/11.jpg">
+        <h2>Играј</h2>
       </div>
 
-<div id="pocni">
-      <div id="start" class="btn"><img src="images/11.jpg"><h2>Играј</h2></div>
-
-      <div style="display: none" id="startNormal" class="btn"><img src="images/4.jpg"><h2>Играј</h2></div>
-     </div>
-
-      <div id="score"></div>
-      <div id="message"></div>
-      <div id="gameboard"></div>
-      <!-- <div  id="restart"><i class="fa fa-rotate-left"></i>Повторно</div>-->
-      <div id="linkovi">
-        <div ><a href="index.html"><img class="links" src="images/4.jpg" width="100" alt=""></a></div>
-        <div ><a href="index.html"><img class="links" src="images/11.jpg" width="100" alt=""></a></div>
-        <div ><a href="index.html"><img class="links" src="images/1.jpg" width="100" alt=""></a></div>
-      </div>
-      <div id="footer">
-        <p>tuka e footerot</p>
+      <div style="display: none" id="startNormal" class="btn"><img src="images/4.jpg">
+        <h2>Играј</h2>
       </div>
     </div>
 
+    <div id="score"></div>
+    <div id="message"></div>
+    <div id="gameboard"></div>
+    <!-- <div  id="restart"><i class="fa fa-rotate-left"></i>Повторно</div>-->
+    <div id="linkovi">
+      <div><a href="index.html"><img class="links" src="images/4.jpg" width="100" alt=""></a></div>
+      <div><a href="index.html"><img class="links" src="images/11.jpg" width="100" alt=""></a></div>
+      <div><a href="index.html"><img class="links" src="images/1.jpg" width="100" alt=""></a></div>
+    </div>
+    <div id="footer">
+    <!--  <p>tuka e footerot</p>-->
+    </div>
+  </div>
 
-
-    <script src="./js/script.js"></script>
-  </body>
+  <script src="./js/script.js"></script>
+</body>
 </html>
