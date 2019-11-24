@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Print the contents of the current window</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+  </head>
+  <body>
+    <a class="back" href="../index.html">BACK</a> <br><br>
+    <h1>JavaScript program to print the contents of the current window</h1>
+
+    <br>
+    <p>Click the button to print the curent page.</p>
+    <button onclick="print_current_page()">Print this page</button>
+
+    <script>
+
+      function print_current_page() {
+        window.print();
+      }
+
+    </script>
+    <br><br><br>
+    <h2>CODE:</h2>
+    <code>
+      function print_current_page() { <br>
+      window.print(); <br>
+      }
+
+    </code>
+  </body>
+</html>

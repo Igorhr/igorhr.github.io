@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript program to get the current date.</title>
+    <style>body{background: black; color: wheat; text-align: center}</style>
+  </head>
+  <body>
+    <script>
+      var denes = new Date();
+      var data = denes.getDate();
+
+      var mesec = denes.getMonth()+1;
+      var godina = denes.getFullYear();
+
+      if (data < 10) {
+        data = "0" + data;
+      }
+      if (mesec < 10) {
+        mesec = "0" + mesec;
+      }
+      
+      denes = data + "/" + mesec + "/" + godina;
+        
+      document.body.innerHTML +=
+        "<h1>" + "JavaScript program to get the current date." + "<h1>"
++ "<h2>" + "denesnata data e: " + denes   + "<h2>";
+    </script>
+  </body>
+</html>
