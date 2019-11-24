@@ -1,0 +1,68 @@
+/* 
+/* Color Theme Swatches in Hex /*
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-1-hex { color: #F41734; }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-2-hex { color: #00C3C3; }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-3-hex { color: #1F425E; }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-4-hex { color: #380E3B; }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-5-hex { color: #EDCA3F; }
+
+/* Color Theme Swatches in RGBA *//*
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-1-rgba { color: rgba(244, 23, 52, 1); }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-2-rgba { color: rgba(0, 195, 195, 1); }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-3-rgba { color: rgba(31, 66, 94, 1); }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-4-rgba { color: rgba(56, 14, 59, 1); }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-5-rgba { color: rgba(237, 202, 63, 1); }
+
+/* Color Theme Swatches in HSLA *//*
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-1-hsla { color: hsla(352, 90, 52, 1); }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-2-hsla { color: hsla(180, 100, 38, 1); }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-3-hsla { color: hsla(206, 50, 24, 1); }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-4-hsla { color: hsla(296, 61, 14, 1); }
+.stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-5-hsla { color: hsla(47, 82, 58, 1); }
+
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #380E3B;
+  color: #EDCA3F; 
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center
+}
+.code-div {
+  font-size: 1.2em;
+  color: #00C3C3;
+  width: 70%;
+  margin: 30px auto;
+}
+.back {
+  color: #F41734;
+ 
+ 
+}
+.list-group {
+  font-weight: bold;
+
+}
+.list-group-item-light {
+  background: #00C3C3;
+  color: #1F425E;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.list-group-item-dark {
+  background: #1F425E;
+  color: #00C3C3;
+  font-weight: bold;
+  text-transform: uppercase;
+}
