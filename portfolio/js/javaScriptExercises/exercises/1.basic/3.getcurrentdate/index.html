@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript program to get the current date.</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+  </head>
+  <body>
+ <a class="back" href="../index.html">BACK</a> <br><br>
+    <script>
+      var denes = new Date();
+      var data = denes.getDate();
+      var mesec = denes.getMonth()+1;
+      var godina = denes.getFullYear();
+      if (data < 10) {
+        data = "0" + data;
+      }
+      if (mesec < 10) {
+        mesec = "0" + mesec;
+      }
+      denes = data + "/" + mesec + "/" + godina;
+
+      document.body.innerHTML +=
+        "<h1>" + "JavaScript program to get the current date." + "</h1>"
++ "<h2>" + "denesnata data e: " + denes   + "</h2>";
+    </script>
+
+    <br><br><br>
+    <h2>CODE:</h2>
+    <div class="code-div">
+    <code>
+      var denes = new Date(); <br>
+      var data = denes.getDate(); <br>
+      var mesec = denes.getMonth()+1; <br>
+      var godina = denes.getFullYear(); <br>
+      if (data < 10) { <br>
+        data = "0" + data; <br>
+      } <br>
+      if (mesec < 10) { <br>
+        mesec = "0" + mesec; <br>
+      } <br>
+      denes = data + "/" + mesec + "/" + godina; <br>
+      document.body.innerHTML += <br>
+        "h1" + "JavaScript program to get the current date." + "h1"  + "h2" + "denesnata data e: " + denes   + "h2";
+
+    </code>
+    </div>
+
+  </body>
+</html>
