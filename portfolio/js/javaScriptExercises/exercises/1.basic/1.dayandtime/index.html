@@ -1,110 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>JavaScript current day and time</title>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript current day and time</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
 
-    <link rel="stylesheet" href="../../../css/style.css">
+<body>
+  <a class="back" href="../index.html">BACK</a>
+  <script>
+    var denes = new Date();
+    var den = denes.getDay();
+    var denLista = ["Недела", "Понеделник", "Вторник", "Среда", "Четврток", "Петок", "Сабота"];
+    var cas = denes.getHours();
+    var minuta = denes.getMinutes();
+    var sekunda = denes.getSeconds();
 
-  </head>
-  <body>
-   <a class="back" href="../index.html">BACK</a>
-    <script>      var denes = new Date();
-      var den = denes.getDay();
-      var denLista = ["Недела", "Понеделник", "Вторник", "Среда", "Четврток", "Петок", "Сабота"];
-      var cas = denes.getHours();
-      var minuta = denes.getMinutes();
-      var sekunda = denes.getSeconds();
+    var skratenka; /*= (cas >= 12) ? " PM " : " AM ";*/
+    if (cas >= 12) {
+      skratenka = " PM ";
+    } else {
+      skratenka = " AM ";
+    }
 
-      var skratenka;    /*= (cas >= 12) ? " PM " : " AM ";*/
-      if (cas >= 12) {
-        skratenka = " PM ";
+    /*cas = (cas >= 12) ? cas - 12: cas;*/
+    if (cas >= 12) {
+      cas += 12;
+    } else {
+      cas - 12;
+    }
+
+    if (cas === 0 && skratenka === ' PM ') {
+      if (minuta === 0 && sekunda === 0) {
+        cas = 12;
+        skratenka = ' Пладне';
       } else {
-        skratenka = " AM ";
+        cas = 12;
+        skratenka = ' PM';
       }
-
-      /*cas = (cas >= 12) ? cas - 12: cas;*/
-      if (cas >= 12) {
-        cas += 12;
+    }
+    if (cas === 0 && skratenka === ' AM ') {
+      if (minuta === 0 && sekunda === 0) {
+        cas = 12;
+        skratenka = 'Полноќ';
       } else {
-        cas - 12;
+        cas = 12;
+        skratenka = ' AM';
       }
+    }
 
-      if (cas === 0 && skratenka === ' PM ') {
-        if (minuta === 0 && sekunda === 0) {
-          cas = 12;
-          skratenka = ' Пладне';
-        } else {
-          cas = 12;
-          skratenka = ' PM';
-        }
-      }
-      if (cas === 0 && skratenka === ' AM ') {
-        if (minuta === 0 && sekunda === 0) {
-          cas = 12;
-          skratenka = 'Полноќ';
-        } else {
-          cas = 12;
-          skratenka = ' AM';
-        }
-      }
+    document.body.innerHTML += "<h1>" + "JavaScript current day and time" + "</h1>";
+    document.body.innerHTML += "<h2>" + "Денес e " + denLista[den] + '.' + "</h2>";
+    document.body.innerHTML += "<h2>" + "Точното Време e " + cas + skratenka + " : " + minuta + " : " + sekunda + "</h2>";
+  </script>
 
-      document.body.innerHTML += "<h1>" + "JavaScript current day and time" +"</h1>";
-      document.body.innerHTML += "<h2>"+ "Денес e " +  denLista[den]+ '.'  +"</h2>";
-      document.body.innerHTML += "<h2>"+ "Точното Време e " + cas + skratenka + " : " + minuta + " : " + sekunda +"</h2>";</script>
+  <h2>CODE:</h2>
+  <div class="code-div">
 
-<h2>CODE:</h2>
-    <div class="code-div">
+    <code>
+      var denes = new Date(); <br>
+      var den = denes.getDay(); <br>
+      var denLista = ["Недела", "Понеделник", "Вторник", "Среда", "Четврток", "Петок", "Сабота"]; <br>
+      var cas = denes.getHours(); <br>
+      var minuta = denes.getMinutes(); <br>
+      var sekunda = denes.getSeconds(); <br>
 
-      <code>
-        var denes = new Date(); <br>
-        var den = denes.getDay();  <br>
-        var denLista = ["Недела", "Понеделник", "Вторник", "Среда", "Четврток", "Петок", "Сабота"]; <br>
-        var cas = denes.getHours(); <br>
-        var minuta = denes.getMinutes(); <br>
-        var sekunda = denes.getSeconds(); <br>
+      var skratenka; /*= (cas >= 12) ? " PM " : " AM ";*/ <br>
+      if (cas >= 12) { <br>
+      skratenka = " PM "; <br>
+      } else { <br>
+      skratenka = " AM "; <br>
+      } <br>
 
-        var skratenka;    /*= (cas >= 12) ? " PM " : " AM ";*/  <br>
-        if (cas >= 12) {  <br>
-        skratenka = " PM "; <br>
-        } else {  <br>
-        skratenka = " AM "; <br>
-        }  <br>
+      /*cas = (cas >= 12) ? cas - 12: cas;*/ ili: <br>
+      if (cas >= 12) { <br>
+      cas += 12; <br>
+      } else { <br>
+      cas - 12; <br>
+      } <br>
 
-        /*cas = (cas >= 12) ? cas - 12: cas;*/ ili: <br>
-        if (cas >= 12) {  <br>
-        cas += 12; <br>
-        } else { <br>
-        cas - 12; <br>
-        } <br>
+      if (cas === 0 && skratenka === ' PM ') { <br>
+      if (minuta === 0 && sekunda === 0) { <br>
+      cas = 12; <br>
+      skratenka = ' Пладне'; <br>
+      } else { <br>
+      cas = 12; <br>
+      skratenka = ' PM'; <br>
+      } <br>
+      } <br>
+      if (cas === 0 && skratenka === ' AM ') { <br>
+      if (minuta === 0 && sekunda === 0) { <br>
+      cas = 12; <br>
+      skratenka = 'Полноќ'; <br>
+      } else { <br>
+      cas = 12; <br>
+      skratenka = ' AM'; <br>
+      } <br>
+      } <br>
 
-        if (cas === 0 && skratenka === ' PM ') { <br>
-        if (minuta === 0 && sekunda === 0) { <br>
-        cas = 12; <br>
-        skratenka = ' Пладне'; <br>
-        } else { <br>
-        cas = 12; <br>
-        skratenka = ' PM'; <br>
-        } <br>
-        } <br>
-        if (cas === 0 && skratenka === ' AM ') { <br>
-        if (minuta === 0 && sekunda === 0) { <br>
-        cas = 12; <br>
-        skratenka = 'Полноќ'; <br>
-        } else { <br>
-        cas = 12; <br>
-        skratenka = ' AM'; <br>
-        } <br>
-        } <br>
+      document.body.innerHTML = "h1" + "JavaScript current day and time" +"h1"; <br>
+      document.body.innerHTML += "h2"+ "Денес e " + denLista[den]+ '.' +"h2"; <br>
+      document.body.innerHTML += "h2"+ "Точното Време e " + cas + skratenka + " : " + minuta + " : " + sekunda +"h2";
 
-        document.body.innerHTML = "h1" + "JavaScript current day and time" +"h1"; <br>
-        document.body.innerHTML += "h2"+ "Денес e " +  denLista[den]+ '.'  +"h2"; <br>
-        document.body.innerHTML += "h2"+ "Точното Време e " + cas + skratenka + " : " + minuta + " : " + sekunda +"h2";
+    </code>
+  </div>
 
-
-      </code>
-
-    </div>
-
-  </body>
+</body>
 </html>

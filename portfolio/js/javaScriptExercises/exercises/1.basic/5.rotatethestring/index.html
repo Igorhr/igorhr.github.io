@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Rotate the string</title>
-    <link rel="stylesheet" href="../../../css/style.css">
-  </head>
-  <body onload="animate_string('#rotation')">
-    <a class="back" href="../index.html">BACK</a> <br><br>
-<h1>Rotate the string</h1>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rotate the string</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
+
+<body onload="animate_string('#rotation')">
+  <a class="back" href="../index.html">BACK</a> <br><br>
+  <h1>Rotate the string</h1>
   <!--  <pre id="an">w3resource </pre>-->
 
-<h2 id="rotation">IGOR HRISTOV </h2>
-    <script>
+  <h2 id="rotation">IGOR HRISTOV </h2>
+  <script>
+    function animate_string(param) {
+      var element = document.querySelector(param);
+      var textNode = element.childNodes[0]; // assuming no other children
+      var text = textNode.data;
 
-      function animate_string(param) {
-        var element = document.querySelector(param);
-        var textNode = element.childNodes[0]; // assuming no other children
-        var text = textNode.data;
+      setInterval(function() {
+        text = text[text.length - 1] + text.substring(0, text.length - 1);
+        textNode.data = text;
+      }, 200);
+    }
+  </script>
 
-        setInterval(function () {
-          text = text[text.length - 1] + text.substring(0, text.length - 1);
-          textNode.data = text;
-        }, 200);
-      }
-    </script>
-
-    <br><br><br>
-    <h2>CODE:</h2>
-    <div class="code-div">
+  <br><br><br>
+  <h2>CODE:</h2>
+  <div class="code-div">
 
     <code>
 
       function animate_string(param) { <br>
-        var element = document.querySelector(param); <br>
-        var textNode = element.childNodes[0]; // assuming no other children <br>
-        var text = textNode.data; <br>
-<br>
-        setInterval(function () { <br>
-          text = text[text.length - 1] + text.substring(0, text.length - 1); <br>
-          textNode.data = text; <br>
-        }, 200); <br> <br>
+      var element = document.querySelector(param); <br>
+      var textNode = element.childNodes[0]; // assuming no other children <br>
+      var text = textNode.data; <br>
+      <br>
+      setInterval(function () { <br>
+      text = text[text.length - 1] + text.substring(0, text.length - 1); <br>
+      textNode.data = text; <br>
+      }, 200); <br> <br>
       }
 
     </code>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

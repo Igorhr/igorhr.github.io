@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Write a JavaScript program to find the area of a triangle</title>
-    <link rel="stylesheet" href="../../../css/style.css">
-  </head>
-  <body>
-    <a class="back" href="../index.html">BACK</a> <br><br>
-    <h1>Write a JavaScript program to find the area of a triangle</h1> <br>
-    <div class="forma-div">
-      <h4>vnesi 3 perimetri:</h4>
-      vrednost 1: <input name="a" type="number"> <br><br>
-      vrednost 2: <input name="b" type="number"> <br> <br>
-      vrednost 3: <input name="c" type="number"> <br>
-      <button onclick="evSmetaj()">Presmetaj</button>
 
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Write a JavaScript program to find the area of a triangle</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
 
-    <h2>Area of Triangle is: <span id="ekran"></span></h2>
-    <script>
+<body>
+  <a class="back" href="../index.html">BACK</a> <br><br>
+  <h1>Write a JavaScript program to find the area of a triangle</h1> <br>
+  <div class="forma-div">
+    <h4>vnesi 3 perimetri:</h4>
+    vrednost 1: <input name="a" type="number"> <br><br>
+    vrednost 2: <input name="b" type="number"> <br> <br>
+    vrednost 3: <input name="c" type="number"> <br>
+    <button onclick="evSmetaj()">Presmetaj</button>
 
-      function triangleArea(a,b,c) {
-        var perimetar = (a+b+c)/2;
-        var area = Math.sqrt(perimetar*((perimetar-a)*(perimetar-b)*(perimetar-c)));
-        return area;
-      }
+  </div>
 
-      function evSmetaj(){
-        var a1 = document.querySelector("input[name=a]").value;
-        var b1 = document.querySelector("input[name=b]").value;
-        var c1 = document.querySelector("input[name=c]").value;
-        var ekran = document.querySelector("#ekran");
-        var oRez = triangleArea(1*a1,1*b1,1*c1);
-        oRez = oRez.toFixed(2);
-        ekran.innerHTML = oRez;
-      }
-      console.log(triangleArea(5,6,7));
-    </script>
+  <h2>Area of Triangle is: <span id="ekran"></span></h2>
+  <script>
+    function triangleArea(a, b, c) {
+      var perimetar = (a + b + c) / 2;
+      var area = Math.sqrt(perimetar * ((perimetar - a) * (perimetar - b) * (perimetar - c)));
+      return area;
+    }
+
+    function evSmetaj() {
+      var a1 = document.querySelector("input[name=a]").value;
+      var b1 = document.querySelector("input[name=b]").value;
+      var c1 = document.querySelector("input[name=c]").value;
+      var ekran = document.querySelector("#ekran");
+      var oRez = triangleArea(1 * a1, 1 * b1, 1 * c1);
+      oRez = oRez.toFixed(2);
+      ekran.innerHTML = oRez;
+    }
+    console.log(triangleArea(5, 6, 7));
+  </script>
 
 
-    <br><br><br>
-    <h2>CODE:</h2>
-    <div class="code-div">
+  <br><br><br>
+  <h2>CODE:</h2>
+  <div class="code-div">
     <code>
       function triangleArea(a,b,c) { <br>
-        var perimetar = (a+b+c)/2; <br>
-        var area = Math.sqrt(perimetar*((perimetar-a)*(perimetar-b)*(perimetar-c))); <br>
-        return area; <br>
+      var perimetar = (a+b+c)/2; <br>
+      var area = Math.sqrt(perimetar*((perimetar-a)*(perimetar-b)*(perimetar-c))); <br>
+      return area; <br>
       }
-<br> <br>
+      <br> <br>
       function evSmetaj(){ <br>
-        var a1 = document.querySelector("input[name=a]").value; <br>
-        var b1 = document.querySelector("input[name=b]").value; <br>
-        var c1 = document.querySelector("input[name=c]").value; <br>
-        var ekran = document.querySelector("#ekran"); <br>
-        var oRez = triangleArea(1*a1,1*b1,1*c1); <br>
-        oRez = oRez.toFixed(2); <br>
-        ekran.innerHTML = oRez; <br>
+      var a1 = document.querySelector("input[name=a]").value; <br>
+      var b1 = document.querySelector("input[name=b]").value; <br>
+      var c1 = document.querySelector("input[name=c]").value; <br>
+      var ekran = document.querySelector("#ekran"); <br>
+      var oRez = triangleArea(1*a1,1*b1,1*c1); <br>
+      oRez = oRez.toFixed(2); <br>
+      ekran.innerHTML = oRez; <br>
       }
 
     </code>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
