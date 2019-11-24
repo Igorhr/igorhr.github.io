@@ -7,58 +7,58 @@
   </head>
   <body>
     <a class="back" href="../index.html">BACK</a> <br><br>
-    <h1>Write a JavaScript program to find the area of a triangle</h1>
-    <h2>vnesi gi 3 perimetri:</h2>
-    vrednost1:<input name="a" type="number">
-    vrednost2:<input name="b" type="number">
-    vrednost3:<input name="c" type="number">
-    <p><button onclick="evSmetaj()">Presmetaj</button></p>
+    <h1>Write a JavaScript program to find the area of a triangle</h1> <br>
+    <div class="forma-div">
+      <h4>vnesi 3 perimetri:</h4>
+      vrednost 1: <input name="a" type="number"> <br><br>
+      vrednost 2: <input name="b" type="number"> <br> <br>
+      vrednost 3: <input name="c" type="number"> <br>
+      <button onclick="evSmetaj()">Presmetaj</button>
 
-    <h2>Area of Triangle is: <span></span></h2>
+    </div>
+
+    <h2>Area of Triangle is: <span id="ekran"></span></h2>
     <script>
 
       function triangleArea(a,b,c) {
-        var s = (a+b+c)/2;
-        var area = Math.sqrt(s*((s-a)*(s-b)*(s-c)));
+        var perimetar = (a+b+c)/2;
+        var area = Math.sqrt(perimetar*((perimetar-a)*(perimetar-b)*(perimetar-c)));
         return area;
       }
-      /*var rezultat = triangleArea(10,10,10);
-      document.body.innerHTML= "<h1>" +  "The area of a triangle" + "</h1>";
-      document.body.innerHTML= "<h2>" +  rezultat + "</h2>";  */
 
       function evSmetaj(){
         var a1 = document.querySelector("input[name=a]").value;
         var b1 = document.querySelector("input[name=b]").value;
         var c1 = document.querySelector("input[name=c]").value;
-
-        var oRez = triangleArea(a1,b1,c1);
-        document.querySelector("span").innerHTML = oRez;
+        var ekran = document.querySelector("#ekran");
+        var oRez = triangleArea(1*a1,1*b1,1*c1);
+        oRez = oRez.toFixed(2);
+        ekran.innerHTML = oRez;
       }
-      console.log(triangleArea(a1,b1,c1));
+      console.log(triangleArea(5,6,7));
     </script>
 
+
+    <br><br><br>
+    <h2>CODE:</h2>
     <div class="code-div">
     <code>
       function triangleArea(a,b,c) { <br>
-        var s = (a+b+c)/2; <br>
-        var area = Math.sqrt(s*((s-a)*(s-b)*(s-c))); <br>
+        var perimetar = (a+b+c)/2; <br>
+        var area = Math.sqrt(perimetar*((perimetar-a)*(perimetar-b)*(perimetar-c))); <br>
         return area; <br>
-      } <br>
-      /*var rezultat = triangleArea(10,10,10);
-      document.body.innerHTML= "<h1>" +  "The area of a triangle" + "</h1>";
-      document.body.innerHTML= "<h2>" +  rezultat + "</h2>";  */
-
+      }
+<br> <br>
       function evSmetaj(){ <br>
         var a1 = document.querySelector("input[name=a]").value; <br>
         var b1 = document.querySelector("input[name=b]").value; <br>
         var c1 = document.querySelector("input[name=c]").value; <br>
-
-        var oRez = triangleArea(a1,b1,c1); <br>
-        document.querySelector("span").innerHTML = oRez; <br>
-      } <br>
-      console.log(triangleArea(a1,b1,c1));
-    </script>
-
+        var ekran = document.querySelector("#ekran"); <br>
+        var oRez = triangleArea(1*a1,1*b1,1*c1); <br>
+        oRez = oRez.toFixed(2); <br>
+        ekran.innerHTML = oRez; <br>
+      }
+        </script>
     </code>
     </div>
   </body>

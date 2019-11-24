@@ -42,8 +42,11 @@ h3 {
 .code-div {
   font-size: 1.2em;
   color: #00C3C3;
-  width: 70%;
-  margin: 30px auto;
+  margin: 30px 5%;
+}
+.forma-div{
+  text-align: center;
+  margin-left: 30px;
 }
 button {
   font-weight: bold;
@@ -77,7 +80,11 @@ button:hover {
    opacity: .9;
    color: #EDCA3F;
  }
-
+input {
+  padding: 6px 8px;
+  border: 1px solid black;
+border-radius: 5px;
+}
 .list-group {
   font-weight: bold;
 
