@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Find If it is a Leap Year</title>
   <link rel="stylesheet" href="../../../css/style.css">
 </head>
+
 <body>
   <a class="back" href="../index.html">BACK</a> <br><br>
   <h1>Determine whether a given year is a leap year</h1>
@@ -15,52 +17,53 @@
 
   <h2 id="ekran"></h2>
   <script>
-  function leapyear(year) {
-    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
-  }
-
-  function evShowleap() {
-    var vlez = document.querySelector("input[type=number]").value;
-    var ekran = document.querySelector("#ekran");
-    if(!vlez.trim()) {
-      ekran.innerHTML = "enter a year";
-      return;
-    }
-    var rezultat = leapyear(vlez);
-    if (rezultat === true) {
-      ekran.innerHTML ="Year " + vlez + " is a Leap Year";
-    } else {
-        ekran.innerHTML ="Year " + vlez + " is not a Leap Year";
+    function leapyear(year) {
+      return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
     }
 
-  }
+    function evShowleap() {
+      var vlez = document.querySelector("input[type=number]").value;
+      var ekran = document.querySelector("#ekran");
+      if (!vlez.trim()) {
+        ekran.innerHTML = "enter a year";
+        return;
+      }
+      var rezultat = leapyear(vlez);
+      if (rezultat === true) {
+        ekran.innerHTML = "Year " + vlez + " is a Leap Year";
+      } else {
+        ekran.innerHTML = "Year " + vlez + " is not a Leap Year";
+      }
+
+    }
   </script>
 
   <br><br><br>
   <h2>CODE:</h2>
   <div class="code-div">
-  <code>
-    function leapyear(year) { <br>
+    <code>
+      function leapyear(year) { <br>
       return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0); <br>
-    } <br> <br> <br>
+      } <br> <br> <br>
 
-    function evShowleap() { <br>
+      function evShowleap() { <br>
       var vlez = document.querySelector("input[type=number]").value; <br>
       var ekran = document.querySelector("#ekran"); <br> <br>
       if(!vlez.trim()) { <br>
-        ekran.innerHTML = "enter a year"; <br>
-        return;<br>
+      ekran.innerHTML = "enter a year"; <br>
+      return;<br>
       } <br> <br>
 
-      var rezultat = leapyear(vlez);  <br>
+      var rezultat = leapyear(vlez); <br>
       if (rezultat === true) { <br>
-        ekran.innerHTML ="Year " + vlez + " is a Leap Year"; <br>
+      ekran.innerHTML ="Year " + vlez + " is a Leap Year"; <br>
       } else { <br>
-          ekran.innerHTML ="Year " + vlez + " is not a Leap Year"; <br>
+      ekran.innerHTML ="Year " + vlez + " is not a Leap Year"; <br>
       } <br><br>
-    }
+      }
 
-  </code>
+    </code>
   </div>
 </body>
+
 </html>
