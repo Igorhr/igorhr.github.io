@@ -6,14 +6,16 @@
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-4-hex { color: #380E3B; }
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-5-hex { color: #EDCA3F; }
 
-/* Color Theme Swatches in RGBA *//*
+/* Color Theme Swatches in RGBA */
+/*
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-1-rgba { color: rgba(244, 23, 52, 1); }
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-2-rgba { color: rgba(0, 195, 195, 1); }
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-3-rgba { color: rgba(31, 66, 94, 1); }
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-4-rgba { color: rgba(56, 14, 59, 1); }
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-5-rgba { color: rgba(237, 202, 63, 1); }
 
-/* Color Theme Swatches in HSLA *//*
+/* Color Theme Swatches in HSLA */
+/*
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-1-hsla { color: hsla(352, 90, 52, 1); }
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-2-hsla { color: hsla(180, 100, 38, 1); }
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-3-hsla { color: hsla(206, 50, 24, 1); }
@@ -21,33 +23,40 @@
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-5-hsla { color: hsla(47, 82, 58, 1); }
 
 */
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #380E3B;
   color: #EDCA3F;
   padding: 20px;
 }
+
 h1 {
   text-align: center;
 }
+
 h2 {
   text-align: center;
 }
+
 h3 {
   text-align: center
 }
+
 .code-div {
   font-size: 1.2em;
   color: #00C3C3;
   margin: 30px 5%;
 }
-.forma-div{
+
+.forma-div {
   text-align: center;
   margin-left: 30px;
 }
+
 button {
   font-weight: bold;
   outline: none;
@@ -60,10 +69,12 @@ button {
   padding: 8px 8px;
   cursor: pointer;
 }
+
 button:hover {
   opacity: .9;
   color: #EDCA3F;
 }
+
 .back {
   font-weight: bold;
   outline: none;
@@ -75,26 +86,30 @@ button:hover {
   text-transform: uppercase;
   padding: 8px 8px;
   cursor: pointer;
- }
- .back:hover {
-   opacity: .9;
-   color: #EDCA3F;
- }
+}
+
+.back:hover {
+  opacity: .9;
+  color: #EDCA3F;
+}
+
 input {
   padding: 6px 8px;
   border: 1px solid black;
-border-radius: 5px;
+  border-radius: 5px;
 }
+
 .list-group {
   font-weight: bold;
-
 }
+
 .list-group-item-light {
   background: #00C3C3;
   color: #1F425E;
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .list-group-item-dark {
   background: #1F425E;
   color: #00C3C3;
