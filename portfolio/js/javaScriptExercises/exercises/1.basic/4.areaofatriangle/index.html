@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Write a JavaScript program to find the area of a triangle</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+  </head>
+  <body>
+    <a class="back" href="../index.html">BACK</a> <br><br>
+    <h1>Write a JavaScript program to find the area of a triangle</h1>
+    <h2>vnesi gi 3 perimetri:</h2>
+    vrednost1:<input name="a" type="number">
+    vrednost2:<input name="b" type="number">
+    vrednost3:<input name="c" type="number">
+    <p><button onclick="evSmetaj()">Presmetaj</button></p>
+
+    <h2>Area of Triangle is: <span></span></h2>
+    <script>
+
+      function triangleArea(a,b,c) {
+        var s = (a+b+c)/2;
+        var area = Math.sqrt(s*((s-a)*(s-b)*(s-c)));
+        return area;
+      }
+      /*var rezultat = triangleArea(10,10,10);
+      document.body.innerHTML= "<h1>" +  "The area of a triangle" + "</h1>";
+      document.body.innerHTML= "<h2>" +  rezultat + "</h2>";  */
+
+      function evSmetaj(){
+        var a1 = document.querySelector("input[name=a]").value;
+        var b1 = document.querySelector("input[name=b]").value;
+        var c1 = document.querySelector("input[name=c]").value;
+
+        var oRez = triangleArea(a1,b1,c1);
+        document.querySelector("span").innerHTML = oRez;
+      }
+      console.log(triangleArea(a1,b1,c1));
+    </script>
+
+    <div class="code-div">
+    <code>
+      function triangleArea(a,b,c) { <br>
+        var s = (a+b+c)/2; <br>
+        var area = Math.sqrt(s*((s-a)*(s-b)*(s-c))); <br>
+        return area; <br>
+      } <br>
+      /*var rezultat = triangleArea(10,10,10);
+      document.body.innerHTML= "<h1>" +  "The area of a triangle" + "</h1>";
+      document.body.innerHTML= "<h2>" +  rezultat + "</h2>";  */
+
+      function evSmetaj(){ <br>
+        var a1 = document.querySelector("input[name=a]").value; <br>
+        var b1 = document.querySelector("input[name=b]").value; <br>
+        var c1 = document.querySelector("input[name=c]").value; <br>
+
+        var oRez = triangleArea(a1,b1,c1); <br>
+        document.querySelector("span").innerHTML = oRez; <br>
+      } <br>
+      console.log(triangleArea(a1,b1,c1));
+    </script>
+
+    </code>
+    </div>
+  </body>
+</html>
