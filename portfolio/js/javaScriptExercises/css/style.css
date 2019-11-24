@@ -1,4 +1,4 @@
-/* 
+/*
 /* Color Theme Swatches in Hex /*
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-1-hex { color: #F41734; }
 .stock-vector-retro-pattern-of-geometric-shapes-colorful-mosaic-banner-geometric-hipster-retro-background-with-130676414-2-hex { color: #00C3C3; }
@@ -27,7 +27,7 @@
 }
 body {
   background-color: #380E3B;
-  color: #EDCA3F; 
+  color: #EDCA3F;
   padding: 20px;
 }
 h1 {
@@ -45,11 +45,39 @@ h3 {
   width: 70%;
   margin: 30px auto;
 }
-.back {
-  color: #F41734;
- 
- 
+button {
+  font-weight: bold;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  background: #1F425E;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 8px;
+  cursor: pointer;
 }
+button:hover {
+  opacity: .9;
+  color: #EDCA3F;
+}
+.back {
+  font-weight: bold;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  background: #1F425E;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 8px;
+  cursor: pointer;
+ }
+ .back:hover {
+   opacity: .9;
+   color: #EDCA3F;
+ }
+
 .list-group {
   font-weight: bold;
 
