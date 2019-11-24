@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Rotate the string</title>
     <link rel="stylesheet" href="../../../css/style.css">
   </head>
-  <body onload="animate_string('#an')">
+  <body onload="animate_string('#rotation')">
     <a class="back" href="../index.html">BACK</a> <br><br>
+<h1>Rotate the string</h1>
+  <!--  <pre id="an">w3resource </pre>-->
 
-    <pre id="an">w3resource </pre>
-
-<h1 class="an">IGOR HRISTOV </h1>
+<h2 id="rotation">IGOR HRISTOV </h2>
     <script>
 
       function animate_string(param) {
@@ -35,11 +35,11 @@
         var element = document.querySelector(param); <br>
         var textNode = element.childNodes[0]; // assuming no other children <br>
         var text = textNode.data; <br>
-
+<br>
         setInterval(function () { <br>
           text = text[text.length - 1] + text.substring(0, text.length - 1); <br>
           textNode.data = text; <br>
-        }, 200); <br>
+        }, 200); <br> <br>
       }
 
     </code>
