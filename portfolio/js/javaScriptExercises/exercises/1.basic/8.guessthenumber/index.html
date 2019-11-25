@@ -13,13 +13,16 @@
 
   <br>
   <p>enter a number between 1 to 10</p>
-<div class="forma-div">
-  <button onclick="guessTheNumber()">Check the number</button>
-
-</div>
+  <div class="forma-div">
+    <input type="number" name="vlez">
+    <button onclick="guessTheNumber()">Check the number</button>
+    <h2><span id="ekran"></span></h2>
+  </div>
 
   <script>
     function guessTheNumber() {
+      var ekran = document.querySelector("#ekran");
+      var vlezVal = document.querySelector("input[name=vlez]");
 
     }
   </script>
@@ -33,4 +36,5 @@
     </code>
   </div>
 </body>
+
 </html>
