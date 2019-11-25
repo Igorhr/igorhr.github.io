@@ -24,14 +24,21 @@
   <h2><span id="ekran"></span></h2>
 
   <script>
-    function findIfJanuary() {
-
+    function findIfJanuary(yearstart, yearend) {
+      for (var year = yearstart; year <= yearend; year++) {
+        var data = new Date(year, 0, 1);
+        //var rezult = [];
+        if (data.getDay() === 0) {
+        //  rezult += "01. January "+ year + " is a Sunday. \n";
+        return year++;
+        }
+      }
     }
 
     function evFindJanuary() {
       var ekran = document.querySelector("#ekran");
-      var vlez1 = document.querySelector("#vlez1").value;
-      var vlez2 = document.querySelector("#vlez2").value;
+      var vlez1 = document.querySelector("input[name=vlez1]").value;
+      var vlez2 = document.querySelector("input[name=vlez2]").value;
       if (!vlez1.trim()) {
         ekran.innerHTML = "Vnesi pocetna Godina";
         return;
@@ -40,6 +47,8 @@
         ekran.innerHTML = "Vnesi zavrsna Godina";
         return;
       }
+      ekran.innerHTML += findIfJanuary(vlez1, vlez2);
+
     }
   </script>
 
