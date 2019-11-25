@@ -58,34 +58,34 @@
   <h2>CODE:</h2>
   <div class="code-div">
     <code>
-        function findIfJanuary(yearstart, yearend) { <br>
-          var rez = []; <br>
-          for (var year = yearstart; year <= yearend; year++) { <br>
-            var data = new Date(year, 0, 1); <br>
-            if (data.getDay() === 0) { <br>
-              rez.push(year); <br>
-            } <br>
-          } <br>
-          return rez; <br>
+      function findIfJanuary(yearstart, yearend) { <br>
+      var rez = []; <br>
+      for (var year = yearstart; year <= yearend; year++) { <br>
+        var data = new Date(year, 0, 1); <br>
+        if (data.getDay() === 0) { <br>
+        rez.push(year); <br>
         } <br>
-<br>
+        } <br>
+        return rez; <br>
+        } <br>
+        <br>
         function evFindJanuary() { <br>
-          var ekran = document.querySelector("#ekran <br>
-          var vlez1 = document.querySelector("input[name=vlez1]").value; <br>
-          var vlez2 = document.querySelector("input[name=vlez2]").value; <br>
-          if (!vlez1.trim()) { <br>
-            ekran.innerHTML = "Vnesi pocetna Godina"; <br>
-            return; <br>
+        var ekran = document.querySelector("#ekran <br>
+        var vlez1 = document.querySelector("input[name=vlez1]").value; <br>
+        var vlez2 = document.querySelector("input[name=vlez2]").value; <br>
+        if (!vlez1.trim()) { <br>
+        ekran.innerHTML = "Vnesi pocetna Godina"; <br>
+        return; <br>
+        } <br>
+        if (!vlez2.trim()) { <br>
+        ekran.innerHTML = "Vnesi zavrsna Godina"; <br>
+        return; <br>
+        } <br>
+        var rezz = findIfJanuary(vlez1, vlez2); <br>
+        for (var i = 0; i < rezz.length; i++) { <br>
+          ekran.innerHTML += "first january is on sunday in " + rezz[i] + " year" + "<br>"; <br>
           } <br>
-          if (!vlez2.trim()) { <br>
-            ekran.innerHTML = "Vnesi zavrsna Godina"; <br>
-            return; <br>
-          } <br>
-          var rezz = findIfJanuary(vlez1, vlez2); <br>
-          for (var i = 0; i < rezz.length; i++) { <br>
-            ekran.innerHTML += "first january is on sunday in " + rezz[i] + " year" + "<br>"; <br>
-          } <br>
-        }
+          }
 
     </code>
   </div>
