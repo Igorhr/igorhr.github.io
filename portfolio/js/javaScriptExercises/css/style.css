@@ -36,6 +36,8 @@ body {
 
 h1 {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3em;
 }
 
 h2 {
@@ -43,9 +45,11 @@ h2 {
 }
 
 h3 {
-  text-align: center
+  text-align: center;
 }
-
+p {
+  text-align: center;;
+}
 .code-div {
   font-size: 1.2em;
   color: #00C3C3;
