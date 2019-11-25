@@ -28,8 +28,7 @@
         return;
       }
       var broj = Math.ceil(Math.random() * 10);
-      console.log(broj);
-      if (1*vlezVal === 1*broj) {
+      if (1 * vlezVal === 1 * broj) {
         ekran.innerHTML = "BRAVO go pogodi brojot";
       } else {
         ekran.innerHTML = "obidi se povtorno";
@@ -41,8 +40,20 @@
   <h2>CODE:</h2>
   <div class="code-div">
     <code>
-
-
+      function guessTheNumber() { <br>
+        var ekran = document.querySelector("#ekran"); <br>
+        var vlezVal = document.querySelector("input[name=vlez]").value; <br>
+        if (!vlezVal.trim()) { <br>
+          ekran.innerHTML = "vnesi broj od 1 do 10"; <br>
+          return; <br>
+        } <br>
+        var broj = Math.ceil(Math.random() * 10); <br>
+        if (1 * vlezVal === 1 * broj) { <br>
+          ekran.innerHTML = "BRAVO go pogodi brojot"; <br>
+        } else { <br>
+          ekran.innerHTML = "obidi se povtorno"; <br>
+        } <br>
+      }
     </code>
   </div>
 </body>
