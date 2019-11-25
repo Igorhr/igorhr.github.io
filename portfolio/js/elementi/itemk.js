@@ -38,7 +38,6 @@ function izgradiTabelaNaElementite() {
 
 izgradiTabelaNaElementite();
 
-
 function pokaziDetalite(hodor) {
   srediTekstot("hemijski-znak-tekst", hodor.dataset.hemijskiznak);
   srediTekstot("detal-ime-naslov", "Име: ");
@@ -65,7 +64,6 @@ function pokaziDetalite(hodor) {
   srediTekstot("informacija-odkade-poteknuva-tekst", hodor.dataset.odkadedoagja);
 };
 
-
 function skrijDetalite() {
   srediTekstot("hemijski-znak-tekst", "");
   srediTekstot("detal-ime-naslov", "");
@@ -88,7 +86,6 @@ function skrijDetalite() {
   srediTekstot("informacija-kade-sekoristi-tekst", "");
   srediTekstot("informacija-odkade-poteknuva-naslov", "");
   srediTekstot("informacija-odkade-poteknuva-tekst", "");
-
 };
 
 function srediTekstot(bran, newText) {
