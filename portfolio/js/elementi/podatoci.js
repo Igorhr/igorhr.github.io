@@ -5,16 +5,9 @@ var doagja_od = {
   masivni_zvezdi: "се синтетизираат во масивните ѕвезди",
   supernova: "Супернова eксплозија на масивни ѕвезди",
   vestacki_element: "синтетички елемент"
-
-
-
 };
 
-
-
-
-var elementi_podatok = [
-  {
+var elementi_podatok = [{
     atomski_broj: 1,
     ime: "Водород",
     simbol: "H",
@@ -140,7 +133,20 @@ var elementi_podatok = [
     kade_se_koristi: "Кислородот е главна состојка на воздухот, се произведува од растенијата за време на фотосинтезата и е потребен за аеробна респирација кај животните.",
     od_kade_doagja: odKadeTojDoagja(doagja_od.supernova)
   },
-
+{
+  atomski_broj: 10,
+  ime: "Неон",
+  simbol: "Ne",
+  atomska_tezina: 20.1798,
+  kategorija: "Благороден гас",
+  klasa_kategorija: "blagodaren-gas",
+  tocka_topenje: -248.59,
+  tocka_vrienje: -246.046,
+  pronaogjanje: 1898,
+  opis: "Безбоен, речиси инертен благороден гас, неонот дава посебна црвеникава светлина",
+  kade_se_koristi: "Се користи за правење на неонски знаци. Други примени: вакуумски цевки, високоволтажни индикатори, телевизиски цевки",
+  od_kade_doagja: odKadeTojDoagja(doagja_od.masivni_zvezdi)
+},
 
 
 ];
@@ -148,11 +154,11 @@ var elementi_podatok = [
 
 function odKadeTojDoagja(...args) {
   let str = args[0];
-  for(let i = 0; i <args.length; i++){
-    if(i > 0) {
-      if(i < args.length - 1) {
+  for (let i = 0; i < args.length; i++) {
+    if (i > 0) {
+      if (i < args.length - 1) {
         str += ", " + args[i];
-      }else {
+      } else {
         str += " & " + args[i];
       }
     }
