@@ -25,14 +25,18 @@
 
   <script>
     function findIfJanuary(yearstart, yearend) {
+      var rez = [];
       for (var year = yearstart; year <= yearend; year++) {
         var data = new Date(year, 0, 1);
-        //var rezult = [];
+        //  var rezult = [];
         if (data.getDay() === 0) {
-        //  rezult += "01. January "+ year + " is a Sunday. \n";
-        return year++;
+          //rezult += "01. January "+ year + " is a Sunday. \n";
+          // console.log(year);
+          rez.push(year);
         }
       }
+      return rez;
+
     }
 
     function evFindJanuary() {
@@ -47,8 +51,10 @@
         ekran.innerHTML = "Vnesi zavrsna Godina";
         return;
       }
-      ekran.innerHTML += findIfJanuary(vlez1, vlez2);
-
+      var rezz = findIfJanuary(vlez1, vlez2);
+      for (var i = 0; i < rezz.length; i++) {
+        ekran.innerHTML += rezz[i] + "<br>";
+      }
     }
   </script>
 
