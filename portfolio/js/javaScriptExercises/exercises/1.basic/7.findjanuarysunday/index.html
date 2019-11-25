@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>7.Find 1st January is being a Sunday between 2014 and 2050</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
+
+<body>
+
+  <a class="back" href="../index.html">BACK</a> <br><br>
+  <h1>Find 1st January is being a Sunday between 2014 and 2050</h1>
+
+  <br>
+
+  <div class="forma-div">
+    <label for="vlez1">Enter Start Year: </label>
+    <input type="number" name="vlez1"><br>
+    <label for="vlez2">Enter End Year: </label>
+    <input type="number" name="vlez2"><br>
+    <button onclick="evFindJanuary()">find January</button>
+  </div>
+  <h2><span id="ekran"></span></h2>
+
+  <script>
+    function findIfJanuary() {
+
+    }
+
+    function evFindJanuary() {
+      var ekran = document.querySelector("#ekran");
+      var vlez1 = document.querySelector("#vlez1").value;
+      var vlez2 = document.querySelector("#vlez2").value;
+      if (!vlez1.trim()) {
+        ekran.innerHTML = "Vnesi pocetna Godina";
+        return;
+      }
+      if (!vlez2.trim()) {
+        ekran.innerHTML = "Vnesi zavrsna Godina";
+        return;
+      }
+    }
+  </script>
+
+  <br><br><br>
+  <h2>CODE:</h2>
+  <div class="code-div">
+    <code>
+
+
+    </code>
+  </div>
+</body>
+
+</html>
