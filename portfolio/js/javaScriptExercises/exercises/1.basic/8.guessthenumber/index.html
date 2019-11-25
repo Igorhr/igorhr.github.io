@@ -22,8 +22,18 @@
   <script>
     function guessTheNumber() {
       var ekran = document.querySelector("#ekran");
-      var vlezVal = document.querySelector("input[name=vlez]");
-
+      var vlezVal = document.querySelector("input[name=vlez]").value;
+      if (!vlezVal.trim()) {
+        ekran.innerHTML = "vnesi broj od 1 do 10";
+        return;
+      }
+      var broj = Math.ceil(Math.random() * 10);
+      console.log(broj);
+      if (1*vlezVal === 1*broj) {
+        ekran.innerHTML = "BRAVO go pogodi brojot";
+      } else {
+        ekran.innerHTML = "obidi se povtorno";
+      }
     }
   </script>
 
