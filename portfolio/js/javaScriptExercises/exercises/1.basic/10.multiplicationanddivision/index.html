@@ -31,7 +31,7 @@
       var num1 = document.querySelector("input[name=num1]").value;
       var num2 = document.querySelector("input[name=num2]").value;
       var rezult = 1 * num1 * 1 * num2;
-      ekran.innerHTML = num1 + " x " + num2 + " = " +  rezult;
+      ekran.innerHTML = num1 + " x " + num2 + " = " + rezult;
     }
 
     function evDivide() {
@@ -39,7 +39,7 @@
       var num1 = document.querySelector("input[name=num1]").value;
       var num2 = document.querySelector("input[name=num2]").value;
       var rezult = ((1 * num1) / (1 * num2)).toFixed(2);
-      ekran.innerHTML = num1 + " : " + num2 + " = " +  rezult;
+      ekran.innerHTML = num1 + " : " + num2 + " = " + rezult;
     }
   </script>
 
@@ -47,8 +47,21 @@
   <h2>CODE:</h2>
   <div class="code-div">
     <code>
+      function evMultiply() { <br>
+      var ekran = document.querySelector("#ekran"); <br>
+      var num1 = document.querySelector("input[name=num1]").value; <br>
+      var num2 = document.querySelector("input[name=num2]").value; <br>
+      var rezult = 1 * num1 * 1 * num2; <br>
+      ekran.innerHTML = num1 + " x " + num2 + " = " + rezult; <br>
+      } <br> <br>
 
-
+      function evDivide() { <br>
+      var ekran = document.querySelector("#ekran"); <br>
+      var num1 = document.querySelector("input[name=num1]").value; <br>
+      var num2 = document.querySelector("input[name=num2]").value; <br>
+      var rezult = ((1 * num1) / (1 * num2)).toFixed(2); <br>
+      ekran.innerHTML = num1 + " : " + num2 + " = " + rezult; <br>
+      }
     </code>
   </div>
 </body>
