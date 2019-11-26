@@ -27,7 +27,7 @@
       var denovi = newYear - today;
       var daysUntilDate = 1*denovi / (1000*60*60*24);
       var roundDays = Math.round(daysUntilDate);
-      ekran.innerHTML = "there is " + roundDays + " days until New YEAR";
+      ekran.innerHTML = "there is " + roundDays + " days until New Year";
     }
   </script>
 
@@ -35,10 +35,17 @@
   <h2>CODE:</h2>
   <div class="code-div">
     <code>
-
-
+      function daysUndtilNewYear() { <br>
+        var ekran = document.querySelector("#ekran"); <br>
+        var today = new Date(); <br>
+        var godina = today.getFullYear()+1; <br>
+        var newYear = new Date(godina, 0, 1); <br>
+        var denovi = newYear - today; <br>
+        var daysUntilDate = 1*denovi / (1000*60*60*24); <br>
+        var roundDays = Math.round(daysUntilDate); <br>
+        ekran.innerHTML = "there is " + roundDays + " days until New YEAR"; <br>
+      }
     </code>
   </div>
 </body>
-
 </html>
