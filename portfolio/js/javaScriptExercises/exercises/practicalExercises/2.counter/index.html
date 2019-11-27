@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+    <title>Hello, MARS!</title>
+    <style>
+      #badge {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card mx-auto shadow-lg" style="width: 17rem">
+      <span class="badge bg-primary" id="badge">Expired</span>
+      <img src="https://mars.nasa.gov/participate/send-your-name/img/logo_nasa@2x.83fa2b75.png" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title text-primary text-center text-uppercase">Send your name to MARS</h5>
+        <p class="card-text text-center">Dont miis this opportunity</p>
+        <a href="https://mars.nasa.gov/participate/send-your-name/mars2020/" id="button" class="btn btn-primary w-100">Go to the offer</a>
+        <div class="bg-danger text-white text-center rounded p-2 mt-1 w-100" id="counter">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var end = new Date ("may 7, 2020 23:59:0").getTime();
+
+      function timer() {
+        var brojac = document.querySelector("#counter");
+        var badge = document.querySelector("#badge");
+        var kopce = document.querySelector("#button");
+        var start = new Date().getTime();
+        var razlika = end - start;
+
+        var hours = Math.floor((razlika%(24*60*60*1000)) / (60*60*1000));
+        // console.log(hours);
+
+        var minutes = Math.floor((razlika%(60*60*1000)) / (60*1000));
+        // console.log(minutes);
+
+        var seconds = Math.floor((razlika%(60*1000))/1000);
+        brojac.innerHTML = hours + ":" + minutes + ":" + seconds;
+        // console.log(seconds);
+        if(razlika < 0) {
+          brojac.innerHTML = "";
+          badge.style.display = "block";
+          kopce.style.pointerEvents = "none";
+        }
+      }
+
+      setTimeout(timer, 0);
+      setInterval(timer,1000);
+
+
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+  </body>
+</html>
