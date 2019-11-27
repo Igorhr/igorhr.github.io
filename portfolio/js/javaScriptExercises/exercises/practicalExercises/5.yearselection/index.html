@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Year Selection with JS</title>
+  <style>select{padding: 5px 20px; margin: 5px;}</style>
+</head>
+<body>
+  <script>
+  function godini(start, end) {
+    document.write("<select>");
+    for (var i = start; i <= end; i++) {
+      document.write("<option>" + i + "</option>");
+    }
+    document.write("</select>");
+  }
+  godini(2000,2020);
+    godini(1900,1950);
+  </script>
+</body>
+</html>
