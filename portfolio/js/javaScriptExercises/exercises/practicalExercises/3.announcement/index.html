@@ -26,7 +26,7 @@
     <div id="container">
       <div class="first">
         <strong>Get Cutting-edge skills</strong>
-        <span>|Shop tech courses starting at 11.99$ Ends 3/21 at 11:59pm</span>
+        <span>|Shop tech courses starting at 11.99$ Ends 12/31 at 11:59pm</span>
       </div>
       <div class="second">
         <strong id="denovi"></strong>
@@ -46,7 +46,7 @@
         var denovi = document.querySelector("#denovi");
         var denes = new Date();
         var zemiData = denes.getDate();
-        var istek = 26;
+        var istek = 1000;
         var razlika = istek - zemiData;
         denovi.innerHTML = "ostanuvaat " + razlika + " denovi " ;
         if(razlika < 0 ) {
