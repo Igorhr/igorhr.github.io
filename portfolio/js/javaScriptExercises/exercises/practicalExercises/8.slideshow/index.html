@@ -16,7 +16,7 @@
   <img id="slideshow" src="" alt="">
 
   <script>
-  var slide = ["https://images.pexels.com/photos/1165982/pexels-photo-1165982.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/1103972/pexels-photo-1103972.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"] ;
+  var slide = ["https://images.pexels.com/photos/1165982/pexels-photo-1165982.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/1103972/pexels-photo-1103972.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"];
   var i = 0;
     function changeImage() {
       var slika = document.querySelector("#slideshow");
@@ -33,7 +33,20 @@
   </script>
 
   <code>
+    var slide = ["https://images.pexels.com/photos/1165982/pexels-photo-1165982.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/1103972/pexels-photo-1103972.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"]; <br>
+        var i = 0; <br>
+      function changeImage() { <br>
+        var slika = document.querySelector("#slideshow"); <br>
+        slika.setAttribute("src", slide[i]); <br> <br>
 
+        if(i < slide.length-1) { <br>
+          i++; <br>
+        } else { <br>
+          i = 0; <br>
+        } <br>
+        setTimeout(changeImage, 2000); <br>
+      } <br> <br>
+    changeImage();
 
   </code>
 </body>
