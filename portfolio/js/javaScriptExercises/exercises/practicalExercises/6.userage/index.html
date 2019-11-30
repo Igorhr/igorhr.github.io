@@ -55,6 +55,36 @@
       }
     }
   </script>
+  <code><br><br>
+    function checkUser() { <br>
+      var link = document.querySelector("#kopce"); <br>
+      var poraka = document.querySelector("#poraka"); <br>
+      var konfirm = window.confirm("Do you want to go to GOOGLE"); <br>
+
+      if (konfirm) { <br>
+        var godini = prompt("please inset your age"); <br>
+        if (godini == "") { <br>
+          link.href = "#"; <br>
+          poraka.innerHTML = "please insert your age"; <br>
+        } else if (!godini) { <br>
+          link.href = "#"; <br>
+          poraka.innerHTML = ""; <br>
+        } else if (isNaN(godini)) { <br>
+          link.href = "#"; <br>
+          poraka.innerHTML = "please insert number for age"; <br>
+        } else if (godini < 18) { <br>
+          link.href = "#"; <br>
+          poraka.innerHTML = "Sorry you are to young to enter"; <br>
+        } else { <br>
+          link.href = "http://www.google.com"; <br>
+        } <br>
+      } else { <br>
+        link.href = "#";<br>
+      } <br>
+    }
+
+
+  </code>
 </body>
 
 </html>
