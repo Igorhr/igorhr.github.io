@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SlideShow</title>
+  <style>
+    img {
+      border-radius:  30px;
+      margin: 0 auto;
+      display: block;
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <img id="slideshow" src="" alt="">
+
+  <script>
+  var slide = ["https://images.pexels.com/photos/1165982/pexels-photo-1165982.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/1103972/pexels-photo-1103972.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"] ;
+  var i = 0;
+    function changeImage() {
+      var slika = document.querySelector("#slideshow");
+      slika.setAttribute("src", slide[i]);
+
+      if(i < slide.length-1) {
+        i++;
+      } else {
+        i = 0;
+      }
+      setTimeout(changeImage, 2000);
+    }
+  changeImage();
+  </script>
+
+  <code>
+
+
+  </code>
+</body>
+</html>
