@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create Table</title>
+</head>
+
+<body>
+  <h2>Create your own Table</h2>
+  <input type="number" id="rows" placeholder="type number of rows">
+  <input type="number" id="columns" placeholder="type number of columns">
+  <button onclick="evCreateTable()" type="button" name="button">Create now</button>
+  <p><small style="color: lightgray">hint: if you dont insert the number of rows and columns it will be 10 by default </small></p>
+  <div id="container"></div>
+  <script type="text/javascript">
+    function evCreateTable() {
+      var rows = document.querySelector("#rows").value;
+      var columns = document.querySelector("#columns").value;
+
+    }
+  </script>
+</body>
+
+</html>
