@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Create Table</title>
   </head>
-
   <body>
     <h2>Create your own Table</h2>
     <input type="number" id="rows" placeholder="type number of rows">
@@ -15,11 +13,11 @@
     <button onclick="evCreateTable()" type="button" name="button">Create now</button>
     <p><small style="color: lightgray">hint: if you dont insert the number of rows and columns it will be 5 by default </small></p>
     <div id="container"></div>
+
     <script type="text/javascript">
 
       function createTable(rows, columns) {
         var container = document.querySelector("#container");
-
         var display = "<table border='1'>";
         for (var i = 1; i <= rows; i++) {
           display += "<tr>";
@@ -45,5 +43,4 @@
       }
     </script>
   </body>
-
 </html>
