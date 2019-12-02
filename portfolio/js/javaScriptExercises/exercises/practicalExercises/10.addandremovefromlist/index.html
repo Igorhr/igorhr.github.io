@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Add Remove Item From List</title>
+</head>
+<body>
+    <main>
+        <input type="text" id="vlez" value="" />
+        <button onclick="evAddItem()">Add Item</button>
+        <button onclick="evRemoveItem()">Remove Item</button>
+
+    </main>
+    <ol id="lista"></ol>
+
+    <script>
+
+
+        function evAddItem() {
+            var vlezVal = document.querySelector("#vlez").value;
+       var ol = document.querySelector("#lista");
+            var li = document.createElement("li");
+            if (vlezVal == 0) {
+                alert("please insert items");
+            } else {
+                li.setAttribute("id", vlezVal);
+                li.appendChild(document.createTextNode(vlezVal));
+                ol.appendChild(li);
+            }
+        }
+
+        function evRemoveItem() {
+            var vlezVal = document.qetElementById("#vlez").value;
+            var ol = document.querySelector("#lista");
+            ol.removeChild(vlezVal);
+        }
+
+    </script>
+</body>
+</html>
