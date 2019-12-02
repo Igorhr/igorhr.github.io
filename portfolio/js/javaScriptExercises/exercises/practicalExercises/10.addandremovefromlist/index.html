@@ -1,39 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Add Remove Item From List</title>
+    <style>
+        ol {
+            width: 500px;
+            margin-left: 20px;
+        }
+        li{
+            width: 100%;
+            font-size: 30px;
+            list-style-type: upper-roman;
+            border: 1px solid #710a0a;
+        }
+        li:nth-of-type(odd) {
+            background-color: #8a8484;
+            color: white;
+        }
+        li:hover {
+            width: 400px;
+            transition: 0.8s;
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
     <main>
         <input type="text" id="vlez" value="" />
         <button onclick="evAddItem()">Add Item</button>
         <button onclick="evRemoveItem()">Remove Item</button>
-
+        <ol id="lista"></ol>
     </main>
-    <ol id="lista"></ol>
 
     <script>
-
+        var vlez = document.getElementById('vlez');
+        var ol = document.querySelector("#lista");
 
         function evAddItem() {
-            var vlezVal = document.querySelector("#vlez").value;
-       var ol = document.querySelector("#lista");
-            var li = document.createElement("li");
-            if (vlezVal == 0) {
+            if (vlez.value.length == 0) {
                 alert("please insert items");
             } else {
-                li.setAttribute("id", vlezVal);
-                li.appendChild(document.createTextNode(vlezVal));
+                var li = document.createElement("li");
+                li.setAttribute("id", vlez.value);
+                li.appendChild(document.createTextNode(vlez.value));
                 ol.appendChild(li);
             }
         }
 
         function evRemoveItem() {
-            var vlezVal = document.qetElementById("#vlez").value;
-            var ol = document.querySelector("#lista");
-            ol.removeChild(vlezVal);
+            var item = document.getElementById(vlez.value);
+            ol.removeChild(item);
         }
 
     </script>
