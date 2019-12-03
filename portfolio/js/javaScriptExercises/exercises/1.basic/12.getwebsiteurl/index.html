@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript program to website URL</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
+
+<body>
+  <a class="back" href="../index.html">BACK</a> <br><br>
+  <h1>JavaScript program to website URL.</h1>
+
+  <br>
+  <div class="forma-div">
+
+    <label for="vlez">Get website ULR</label>
+
+
+    <button onclick="getUrl()">get URL</button>
+
+    <p>The Result Is:</p>
+    <h2><span id="ekran"></span></h2>
+  </div>
+
+  <script>
+  function getUrl() {
+    var ekran = document.querySelector("#ekran");
+    ekran.innerHTML = document.URL;
+  }
+
+  </script>
+
+  <br><br><br>
+  <h2>CODE:</h2>
+  <div class="code-div">
+    <code>
+
+
+
+    </code>
+  </div>
+</body>
+
+</html>
