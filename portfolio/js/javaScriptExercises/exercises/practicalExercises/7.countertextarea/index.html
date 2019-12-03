@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Textarea count down caracter</title>
+</head>
+
+<body>
+  <form action="">
+
+    <div class="form-group">
+      <label for="textarea">Type your message</label>
+      <textarea oninput="evCount()" name="textarea" id="textarea" rows="3" maxlength="300"></textarea>
+      <small id="counter">300</small>
+    </div>
+  </form>
+
+  <script>
+    function evCount() {
+      var caracter = document.querySelector("#textarea");
+      var counter = document.querySelector("#counter");
+      var max = caracter.maxLength;
+      counter.innerHTML = max - caracter.value.length;
+      if (counter.innerHTML == 0) {
+        counter.style.display = "none";
+      } else {
+        counter.style.display = "block";
+      }
+    }
+  </script>
+
+  <code>
+
+    function evCount() { <br>
+    var caracter = document.querySelector("#textarea"); <br>
+    var counter = document.querySelector("#counter"); <br>
+    var max = caracter.maxLength; <br>
+    counter.innerHTML = max - caracter.value.length; <br>
+    if(counter.innerHTML == 0) { <br>
+    counter.style.display = "none"; <br>
+    } else { <br>
+    counter.style.display = "block"; <br>
+    } <br>
+    }
+
+  </code>
+</body>
+</html>

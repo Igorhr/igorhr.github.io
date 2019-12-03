@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tooltip and slider</title>
+  <style>
+    a {
+        border-bottom:1px solid #bbb;
+        color:#666;
+        display:inline-block;
+        position:relative;
+        text-decoration:none;
+    }
+    a:hover,
+    a:focus {
+        color:#36c;
+    }
+    a:active {
+        top:1px;
+    }
+
+    /* Tooltip styling */
+    a[data-tooltip]:after {
+        border-top: 8px solid #222;
+        border-top: 8px solid hsla(0,0%,0%,.85);
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        content: "";
+        display: none;
+        height: 0;
+        width: 0;
+        left: 25%;
+        position: absolute;
+    }
+    a[data-tooltip]:before {
+        background: #222;
+        background: hsla(0,0%,0%,.85);
+        color: #f6f6f6;
+        content: attr(data-tooltip);
+        display: none;
+        font-family: sans-serif;
+        font-size: 14px;
+        height: 32px;
+        left: 0;
+        line-height: 32px;
+        padding: 0 15px;
+        position: absolute;
+        text-shadow: 0 1px 1px hsla(0,0%,0%,1);
+        white-space: nowrap;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+    }
+    a[data-tooltip]:hover:after {
+        display: block;
+        top: -9px;
+    }
+    a[data-tooltip]:hover:before {
+        display: block;
+        top: -41px;
+    }
+    a[data-tooltip]:active:after {
+        top: -10px;
+    }
+    a[data-tooltip]:active:before {
+        top: -42px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Bulletproof Pure CSS Tooltips</h2>
+
+<main>
+  <p>Use the range slider below to adjust the body font size. The tooltip uses em units (which are based on the pixels of the parent font size), so the size, padding, and position of the tooltip stays relative to the link.<p>
+
+  <p class="tt">Lorem ipsum dolor sit amet <a href="#" data-tooltip="This is a pure CSS tooltip">hover over this link</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, <a href="#" data-tooltip="This is a pure CSS tooltip">hover over this link which is longer than the other</a> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+  <p>You'll also notice at certain sizes the link spans two lines and the tooltip still appears at a comfortable location.</p>
+
+  <p class="range"><input type="range" min="10" max="30" step="1" value="20" id="slider"></p>
+</main>
+<script type="text/javascript">
+let slider = document.getElementById('slider'),
+  b = document.body;
+
+slider.oninput = function () {
+b.style.fontSize = this.value + 'px';
+op.innerHTML = this.value + 'px';
+}
+</script>
+
+</body>
+</html>

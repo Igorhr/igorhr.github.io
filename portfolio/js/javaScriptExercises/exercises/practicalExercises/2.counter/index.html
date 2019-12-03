@@ -37,13 +37,10 @@
         var kopce = document.querySelector("#button");
         var start = new Date().getTime();
         var razlika = end - start;
-
         var hours = Math.floor((razlika%(24*60*60*1000)) / (60*60*1000));
         // console.log(hours);
-
         var minutes = Math.floor((razlika%(60*60*1000)) / (60*1000));
         // console.log(minutes);
-
         var seconds = Math.floor((razlika%(60*1000))/1000);
         brojac.innerHTML = hours + ":" + minutes + ":" + seconds;
         // console.log(seconds);
@@ -56,10 +53,31 @@
 
       setTimeout(timer, 0);
       setInterval(timer,1000);
-
-
-
     </script>
+    <code>
+<br><br>
+      var end = new Date ("may 1, 2020 23:59:0").getTime(); <br> <br>
+
+      function timer() { <br>
+        var brojac = document.querySelector("#counter"); <br>
+        var badge = document.querySelector("#badge"); <br>
+        var kopce = document.querySelector("#button"); <br>
+        var start = new Date().getTime(); <br>
+        var razlika = end - start; <br>
+        var hours = Math.floor((razlika%(24*60*60*1000)) / (60*60*1000));<br>
+        var minutes = Math.floor((razlika%(60*60*1000)) / (60*1000)); <br>
+        var seconds = Math.floor((razlika%(60*1000))/1000); <br>
+        brojac.innerHTML = hours + ":" + minutes + ":" + seconds; <br>
+        if(razlika < 0) { <br>
+          brojac.innerHTML = ""; <br>
+          badge.style.display = "block"; <br>
+          kopce.style.pointerEvents = "none"; <br>
+        } <br>
+      } <br><br>
+
+      setTimeout(timer, 0); <br>
+      setInterval(timer,1000);
+    </code>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -38,6 +38,7 @@
         godini = document.querySelector("#input2").value;
         return 1*godini*365;
       }
+
       function displayAgeInDays() {
         var ekran = document.querySelector("#ekran");
         var name = takeName();
@@ -52,5 +53,32 @@
       }
 
     </script>
+
+    <code>
+ <br><br>
+      function takeName(ime) { <br>
+        ime = document.querySelector("#input1").value; <br>
+        return ime; <br>
+      } <br><br>
+
+      function takeAge(godini) { <br>
+        godini = document.querySelector("#input2").value; <br>
+        return 1*godini*365; <br>
+      } <br> <br>
+
+      function displayAgeInDays() { <br>
+        var ekran = document.querySelector("#ekran"); <br>
+        var name = takeName(); <br>
+        var age = takeAge(); <br>
+        if(name && age) { <br>
+          ekran.innerHTML = name + " your age in days is " + age + " days."; <br>
+          ekran.style.display = "block"; <br>
+        } else { <br>
+          alert("please enter your name and age"); <br>
+          ekran.style.display = "none"; <br>
+        } <br>
+      }
+
+    </code>
   </body>
 </html>

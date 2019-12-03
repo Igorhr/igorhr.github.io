@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Year Selection with JS</title>
-  <style>select{padding: 5px 20px; margin: 5px;}</style>
+  <style>
+    select {
+      padding: 5px 20px;
+      margin: 5px;
+    }
+  </style>
 </head>
+
 <body>
   <script>
-  function godini(start, end) {
-    document.write("<select>");
-    for (var i = start; i <= end; i++) {
-      document.write("<option>" + i + "</option>");
+    function godini(start, end) {
+      document.write("<select>");
+      for (var i = start; i <= end; i++) {
+        document.write("<option>" + i + "</option>");
+      }
+      document.write("</select>");
     }
-    document.write("</select>");
-  }
-  godini(2000,2020);
-    godini(1900,1950);
+    godini(2000, 2020);
+    godini(1900, 1950);
   </script>
+
+  <code> <br><br>
+    function godini(start, end) { <br>
+      document.write("<select>"); <br>
+      for (var i = start; i <= end; i++) { <br>
+        document.write("<option>" + i + "</option>"); <br>
+      } <br>
+      document.write("</select>"); <br>
+    } <br>
+    godini(2000, 2020); <br>
+    godini(1900, 1950);
+
+
+  </code>
 </body>
+
 </html>

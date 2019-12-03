@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #kopce,
+    #visited {
+      background-color: darkblue;
+      color: wheat;
+      padding: 12px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+    #kopce:hover,
+    #kopce:active {
+      opacity: .9;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="poraka"></p>
+  <a onclick="checkUser()" href="http//www.google.com" id="kopce">Enter in Google</a>
+
+  <script>
+    function checkUser() {
+      var link = document.querySelector("#kopce");
+      var poraka = document.querySelector("#poraka");
+      var konfirm = window.confirm("Do you want to go to GOOGLE");
+
+      if (konfirm) {
+        var godini = prompt("please inset your age");
+        if (godini == "") {
+          link.href = "#";
+          poraka.innerHTML = "please insert your age";
+        } else if (!godini) {
+          link.href = "#";
+          poraka.innerHTML = "";
+        } else if (isNaN(godini)) {
+          link.href = "#";
+          poraka.innerHTML = "please insert number for age";
+        } else if (godini < 18) {
+          link.href = "#";
+          poraka.innerHTML = "Sorry you are to young to enter";
+        } else {
+          link.href = "http://www.google.com";
+        }
+      } else {
+        link.href = "#";
+      }
+    }
+  </script>
+  <code><br><br>
+    function checkUser() { <br>
+      var link = document.querySelector("#kopce"); <br>
+      var poraka = document.querySelector("#poraka"); <br>
+      var konfirm = window.confirm("Do you want to go to GOOGLE"); <br>
+
+      if (konfirm) { <br>
+        var godini = prompt("please inset your age"); <br>
+        if (godini == "") { <br>
+          link.href = "#"; <br>
+          poraka.innerHTML = "please insert your age"; <br>
+        } else if (!godini) { <br>
+          link.href = "#"; <br>
+          poraka.innerHTML = ""; <br>
+        } else if (isNaN(godini)) { <br>
+          link.href = "#"; <br>
+          poraka.innerHTML = "please insert number for age"; <br>
+        } else if (godini < 18) { <br>
+          link.href = "#"; <br>
+          poraka.innerHTML = "Sorry you are to young to enter"; <br>
+        } else { <br>
+          link.href = "http://www.google.com"; <br>
+        } <br>
+      } else { <br>
+        link.href = "#";<br>
+      } <br>
+    }
+
+
+  </code>
+</body>
+
+</html>

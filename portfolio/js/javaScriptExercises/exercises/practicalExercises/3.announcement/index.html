@@ -54,10 +54,37 @@
         }
       }
 
-
       setInterval(casovnik, 1000);
       setTimeout(casovnik, 0);
       zemiDenovi();
     </script>
+
+<h2>CODE:</h2>
+    <code>
+<br><br>
+      function casovnik() { <br>
+        var casot = document.querySelector("#casot"); <br>
+        var denes = new Date(); <br>
+        casot.innerHTML = denes.toLocaleTimeString(); <br>
+      } <br> <br>
+
+      function zemiDenovi() { <br>
+        var najava = document.querySelector("#container"); <br>
+        var denovi = document.querySelector("#denovi"); <br>
+        var denes = new Date(); <br>
+        var zemiData = denes.getDate(); <br>
+        var istek = 1000; <br>
+        var razlika = istek - zemiData; <br>
+        denovi.innerHTML = "ostanuvaat " + razlika + " denovi " ; <br>
+        if(razlika < 0 ) { <br>
+          najava.style.display = "none"; <br>
+        } <br>
+      } <br><br>
+
+      setInterval(casovnik, 1000); <br>
+      setTimeout(casovnik, 0); <br>
+      zemiDenovi();
+
+    </code>
   </body>
 </html>
