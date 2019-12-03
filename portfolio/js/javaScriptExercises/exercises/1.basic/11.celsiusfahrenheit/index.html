@@ -43,7 +43,19 @@
   <h2>CODE:</h2>
   <div class="code-div">
     <code>
+      function evToFahrenheit() { <br>
+        var vlez = document.querySelector("#vlez").value; <br>
+        var ekran = document.querySelector("#ekran"); <br>
+        var farenheit = (1.8 * vlez) + 32; <br>
+        ekran.innerHTML =vlez+"\xB0C" + " is "+  farenheit.toFixed(2) +"\xB0F"; <br>
+      } <br> <br>
 
+      function evToCelsius() { <br>
+        var vlez = document.querySelector("#vlez").value; <br>
+        var ekran = document.querySelector("#ekran"); <br>
+        var celzius = (vlez - 32) / 1.8; <br>
+        ekran.innerHTML =vlez+ "\xB0F is "  + celzius.toFixed(2) + "\xB0C";<br>
+      }
 
 
     </code>
