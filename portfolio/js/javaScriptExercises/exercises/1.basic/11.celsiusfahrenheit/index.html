@@ -24,18 +24,19 @@
   </div>
 
   <script>
-  function evToFahrenheit() {
-        var vlez = document.querySelector("#vlez").value;
-        var ekran = document.querySelector("#ekran");
-        var farenheit = (1.8 * vlez) + 32;
-        ekran.innerHTML = farenheit;
-      }
-      function evToCelsius() {
-        var vlez = document.querySelector("#vlez").value;
-        var ekran = document.querySelector("#ekran");
-        var celzius = (vlez - 32) / 1.8;
-        ekran.innerHTML = celzius;
-      }
+    function evToFahrenheit() {
+      var vlez = document.querySelector("#vlez").value;
+      var ekran = document.querySelector("#ekran");
+      var farenheit = (1.8 * vlez) + 32;
+      ekran.innerHTML =vlez+"\xB0C" + " is "+  farenheit.toFixed(2) +"\xB0F";
+    }
+
+    function evToCelsius() {
+      var vlez = document.querySelector("#vlez").value;
+      var ekran = document.querySelector("#ekran");
+      var celzius = (vlez - 32) / 1.8;
+      ekran.innerHTML =vlez+ "\xB0F is "  + celzius.toFixed(2) + "\xB0C";
+    }
   </script>
 
   <br><br><br>
