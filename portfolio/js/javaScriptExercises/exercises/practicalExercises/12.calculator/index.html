@@ -8,6 +8,7 @@
   <style>
 input[type=button] {
   width: 30px;
+  cursor: pointer;
 }
 
   </style>
@@ -55,6 +56,7 @@ Ekran: <input type="text" id="ekran">
     x.value += number;
     flag = 0;
   }
+
 function enterOperator(operator) {
   if(flag==0) {
     var x = document.querySelector("#odgovor");
@@ -62,6 +64,15 @@ function enterOperator(operator) {
   }
 }
 
+function Clear(c) {
+  var x = document.querySelector("#odgovor");
+  x.value = "";
+  document.querySelector("#ekran").value = "";
+}
+function Equal() {
+  var x = document.querySelector("#odgovor").value;
+  document.querySelector("#ekran").value = eval(x);
+}
 </script>
 </body>
 </html>
