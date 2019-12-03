@@ -61,7 +61,7 @@ p {
   margin-left: 30px;
 }
 
-/*button {
+button {
   font-weight: bold;
   outline: none;
   border: 2px solid black;
@@ -77,7 +77,7 @@ p {
 button:hover {
   opacity: .9;
   color: #EDCA3F;
-}*/
+}
 
 .back {
   font-weight: bold;

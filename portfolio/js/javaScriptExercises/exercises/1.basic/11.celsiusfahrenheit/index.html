@@ -14,8 +14,8 @@
   <br>
   <div class="forma-div">
 
-    <label for="num2">Enter Temperaure </label>
-    <input type="number" name="num2" id="num2"><br>
+    <label for="vlez">Enter Temperaure </label>
+    <input type="number" name="num2" id="vlez"><br>
 
     <button onclick="evToFahrenheit()">To Fahrenheit</button>
     <button onclick="evToCelsius()">To Celsius</button>
@@ -25,15 +25,17 @@
 
   <script>
     function evToFahrenheit() {
+      var vlez = document.querySelector("#vlez").value;
       var ekran = document.querySelector("#ekran");
-
-      ekran.innerHTML = "Celsius";
+      var farenheit = (1.8 * vlez) + 32;
+      ekran.innerHTML =vlez+"\xB0C" + " is "+  farenheit.toFixed(2) +"\xB0F";
     }
 
     function evToCelsius() {
+      var vlez = document.querySelector("#vlez").value;
       var ekran = document.querySelector("#ekran");
-
-      ekran.innerHTML = "Celsius";
+      var celzius = (vlez - 32) / 1.8;
+      ekran.innerHTML =vlez+ "\xB0F is "  + celzius.toFixed(2) + "\xB0C";
     }
   </script>
 
@@ -41,7 +43,19 @@
   <h2>CODE:</h2>
   <div class="code-div">
     <code>
+      function evToFahrenheit() { <br>
+        var vlez = document.querySelector("#vlez").value; <br>
+        var ekran = document.querySelector("#ekran"); <br>
+        var farenheit = (1.8 * vlez) + 32; <br>
+        ekran.innerHTML =vlez+"\xB0C" + " is "+  farenheit.toFixed(2) +"\xB0F"; <br>
+      } <br> <br>
 
+      function evToCelsius() { <br>
+        var vlez = document.querySelector("#vlez").value; <br>
+        var ekran = document.querySelector("#ekran"); <br>
+        var celzius = (vlez - 32) / 1.8; <br>
+        ekran.innerHTML =vlez+ "\xB0F is "  + celzius.toFixed(2) + "\xB0C";<br>
+      }
 
 
     </code>
