@@ -49,7 +49,19 @@ input[type=button] {
 </table>
 Ekran: <input type="text" id="ekran">
 <script type="text/javascript">
-  
+  var flag;
+  function enterNumber(number) {
+    var x = document.querySelector("#odgovor");
+    x.value += number;
+    flag = 0;
+  }
+function enterOperator(operator) {
+  if(flag==0) {
+    var x = document.querySelector("#odgovor");
+    x.value += operator;
+  }
+}
+
 </script>
 </body>
 </html>
