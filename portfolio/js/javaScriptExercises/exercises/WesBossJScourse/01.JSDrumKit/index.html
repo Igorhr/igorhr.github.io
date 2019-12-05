@@ -52,19 +52,23 @@
 
   </div> <!-- END for class keys -->
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/clap.wav"></audio>
-  <audio data-key="68" src="sounds/clap.wav"></audio>
-  <audio data-key="70" src="sounds/clap.wav"></audio>
-  <audio data-key="71" src="sounds/clap.wav"></audio>
-  <audio data-key="72" src="sounds/clap.wav"></audio>
-  <audio data-key="74" src="sounds/clap.wav"></audio>
-  <audio data-key="75" src="sounds/clap.wav"></audio>
-  <audio data-key="76" src="sounds/clap.wav"></audio>
+  <audio data-key="65" src="audio/clap.wav"></audio>
+  <audio data-key="83" src="audio/hihat.wav"></audio>
+  <audio data-key="68" src="audio/kick.wav"></audio>
+  <audio data-key="70" src="audio/openhat.wav"></audio>
+  <audio data-key="71" src="audio/boom.wav"></audio>
+  <audio data-key="72" src="audio/ride.wav"></audio>
+  <audio data-key="74" src="audio/snare.wav"></audio>
+  <audio data-key="75" src="audio/tom.wav"></audio>
+  <audio data-key="76" src="audio/tink.wav"></audio>
 
   <script>
-    window.addEventListener("keydown", function(e){
-console.log("ne menja")
+    window.addEventListener("keydown", function(e) {
+      //  console.log("ne menja");
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"`);
+      if (!audio) return; // stop function runing
+      audio.play();
+      console.log(audio);
     });
   </script>
 
