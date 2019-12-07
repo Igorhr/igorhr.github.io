@@ -19,12 +19,20 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+    const secondHand = document.querySelector(".second-hand");
 
-<script type="text/javascript">
-  function setDate() {
-    console.log("hi");
-  }
-</script>
+    function setDate() {
+      //  console.log("hi");
+      const today = new Date();
+      const seconds = today.getSeconds();
+      const secondDegrees = ((seconds / 60) * 360) + 90; // will give us percentage for strelkata da rabote 360 stepeni
+      console.log(seconds);
+      secondHand.style.transform = `rotate(${secondDegrees}deg)`;
+    }
+
+    setInterval(setDate, 1000);
+  </script>
 </body>
 
 </html>
