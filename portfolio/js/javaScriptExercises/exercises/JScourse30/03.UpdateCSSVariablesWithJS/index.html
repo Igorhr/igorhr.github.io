@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Update CSS Variables with JS</title>
+  <style>
+  :root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+  }
+
+    html {background: black;color: yellow; }
+    body {text-align: center; font-family: sans-serif; font-weight: 100; font-size: 20px;}
+    .controls {margin-bottom: 50px;}
+    input {width: 100px;}
+
+    a {
+        color: var(--base);
+        text-decoration: none;
+    }
+    img {
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+    }
+    .hl {
+        color: var(--base);
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Upadate CSS Variables with <span class="hl">JS</span></h1>
+
+  <div class="controls">
+
+    <!-- input for range for SPACING -->
+    <label for="spacing">Spacing: </label>
+    <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px"><br>
+
+    <!-- input for range for BLUR -->
+    <label for="blur">Blur: </label>
+    <input type="range" name="blur" min="10" max="25" value="10" data-sizing="px"> <br>
+
+    <!-- input for range for BASE COLOR -->
+    <label for="base">Base Color: </label>
+    <input type="color" name="base" value="#ffc600">
+
+    <!-- Image to change codes abouve to -->
+    <img src="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg" width="500" alt="earth from space">
+  </div>
+
+  <script>
+      const inputs = document.querySelectorAll(".controls input");
+      function handeUpdate() {
+          console.log(this.value);
+      }
+      inputs.forEach(input => input.addEventListener("change", handeUpdate));
+      inputs.forEach(input => input.addEventListener("mousemove", handeUpdate));
+
+      console.log(inputs);
+      console.log(inputs);
+  </script>
+</body>
+
+</html>
