@@ -19,13 +19,13 @@ body {
   height: 30rem;
   margin: 50px auto;
   padding: 2rem;
-  border: 20px solid white;
+  border: 20px solid darkblue;
   border-radius: 50%;
   box-shadow:
     0 0 0px 4px rgba(0, 0, 0, 0.1),
-    inset 0 0 0 3px #efefef,
+    inset 0 0 0 3px lightblue,
     inset 0 0 10px black,
-    0 0 10px rgba(0, 0, 0, 0.2);
+    0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 .clock-face {
@@ -39,10 +39,17 @@ body {
   position: absolute;
   top: 50%;
   width: 50%;
-  height: 6px;
-  transition: all 0.05s;
+  height: 10px;
+  transition: all .9s;
   transition-timing-function: cubic-bezier(.9, -0.55, .27, 1.55);
   transform: rotate(90deg);
   transform-origin: 100%;
-  background: black;
+  background: darkblue;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.hand.hour-hand {
+  height: 15px;
+}
+.hand.second-hand {
+  height: 5px;
 }
