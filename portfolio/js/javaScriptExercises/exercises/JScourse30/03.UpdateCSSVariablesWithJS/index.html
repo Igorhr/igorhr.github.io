@@ -10,7 +10,10 @@
   :root {
       --base: red;
       --spacing: 10px;
-      --blur: 10px;
+      --blur: 0px;
+      --sirina: 50%;
+      --radius: 10%;
+      --rotate: 90deg;
   }
 
     html {background: black;color: yellow; }
@@ -23,9 +26,14 @@
         text-decoration: none;
     }
     img {
+        margin-top: 30px;
         padding: var(--spacing);
         background: var(--base);
         filter: blur(var(--blur));
+        width: var(--sirina);
+        height: auto;
+        border-radius: var(--radius);
+        transform: rotate(var(--rotate));
     }
     .hl {
         color: var(--base);
@@ -38,6 +46,17 @@
   <h1>Upadate CSS Variables with <span class="hl">JS</span></h1>
 
   <div class="controls">
+      <!-- input range for opacity in image -->
+      <label for="rotate">Rotate: </label>
+      <input type="range" name="rotate" min="0" max="360"  value="0" data-sizing="deg">
+
+      <!-- input range for Border Radius of the image -->
+      <label for="radius">Border Radius:</label>
+      <input type="range" name="radius" min="0" max="50" value="10" data-sizing="%">
+
+      <!-- input range for width of the image -->
+      <label for="sirina">Sirina: </label>
+      <input type="range" name="sirina" min="10" max="100" value="50" data-sizing="%">
 
     <!-- input for range for SPACING -->
     <label for="spacing">Spacing: </label>
@@ -45,7 +64,7 @@
 
     <!-- input for range for BLUR -->
     <label for="blur">Blur: </label>
-    <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+    <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
 
     <!-- input for range for BASE COLOR -->
     <label for="base">Base Color: </label>
