@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Update CSS Variables with JS</title>
+
   <style>
   :root {
       --base: red;
@@ -26,7 +26,7 @@
         text-decoration: none;
     }
     img {
-        margin-top: 30px;
+        margin-top: 50px;
         padding: var(--spacing);
         background: var(--base);
         filter: blur(var(--blur));
@@ -38,14 +38,14 @@
     .hl {
         color: var(--base);
     }
-
   </style>
-</head>
 
+</head>
 <body>
   <h1>Upadate CSS Variables with <span class="hl">JS</span></h1>
 
   <div class="controls">
+
       <!-- input range for opacity in image -->
       <label for="rotate">Rotate: </label>
       <input type="range" name="rotate" min="0" max="360"  value="0" data-sizing="deg">
@@ -68,25 +68,25 @@
 
     <!-- input for range for BASE COLOR -->
     <label for="base">Base Color: </label>
-    <input type="color" name="base" value="#a3cc33"><br> <br>
+    <input type="color" name="base" value="#a3cc33">
 
-    <!-- Image to change codes abouve to -->
-    <img src="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg" width="500" alt="earth from space">
   </div>
+
+  <!-- Image to change codes abouve to -->
+  <img src="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg" width="500" alt="earth from space">
 
   <script>
       const inputs = document.querySelectorAll(".controls input");
       function handeUpdate() {
-          const suffix = this.dataset.sizing ||  "";
-          console.log(this.name);
-          document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+        const nastavka = this.dataset.sizing || ""; //take suffix of value
+        // console.log(this.name);
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + nastavka);
       }
       inputs.forEach(input => input.addEventListener("change", handeUpdate));
       inputs.forEach(input => input.addEventListener("mousemove", handeUpdate));
 
-      console.log(inputs);
-      console.log(inputs);
+     // console.log(inputs);
   </script>
-</body>
 
+</body>
 </html>

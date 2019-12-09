@@ -41,8 +41,8 @@
 
       const seconds = today.getSeconds();
       const secondDegrees = ((seconds / 60) * 360) + 90; // will give us percentage for strelkata da rabote 360 stepeni
-      secondHand.style.transform = `rotate(${secondDegrees}deg)`;
-
+     // secondHand.style.transform = `rotate(${secondDegrees}deg)`;
+      secondHand.style.transform = "rotate(" + secondDegrees +"deg)";
 
 
       minHand.style.transform = `rotate(${minuteDegrees}deg)`;
