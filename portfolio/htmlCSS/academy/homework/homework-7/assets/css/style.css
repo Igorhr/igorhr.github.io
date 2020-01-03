@@ -5,86 +5,84 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
-
-}
-
-.site-header {
-  background: #87509c;
-  color: #fff;
-  padding: 30px 0;
 }
 
 .navbar {
+  /* background: #87509c; */
+  background-color: #87509C;
   width: 100%;
+  height: 100px;
   overflow: hidden;
   overflow-x: auto;
+  display: table;
+  text-align: right;
 }
 
+.navbar img {
+  position: absolute;
+  left: 5%;
+  width: auto;
+  height: 80px;
+}
 .navbar ul {
-  display: table;
+  width: 100%;
+  display: table-cell;
   vertical-align: middle;
   white-space: nowrap;
-  padding: 0;
-  margin: 0;
   list-style: none;
-  text-align: center;
-  float: right;
 }
 .navbar li {
   display: inline-block;
-  padding: 0 14px;
-  position: relative;
+
 }
 .navbar a {
-  padding: 15px 10px;
+  padding: 5px 10px;
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
-  transition: 0.25s color ease-in-out;
+  transition: 0.25s background-color ease-in-out;
 }
-.navbar a:hover {
-  color: red;
+.navbar ul li a:hover {
+  background-color: #643A79;
 }
 
 /* section header */
 .section-hero {
-  height: calc(100% - 60px);
-  display: table;
+  text-align: center;
+  height: calc(100% - 80px);
   width: 100%;
   background: #87509c;
+  position: relative;
+
 }
 .hero-content {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .hero-content h1 {
   padding: 0;
   margin: 0;
 }
 
-
-
-
-
 /*=== Main  ===*/
 
 /* services */
 
 .services {
-  background: #17C2A4;
+  background: #17c2a4;
   color: #fff;
   text-align: center;
 }
 .section-title {
   width: 90%;
   margin: 0 auto;
-  padding: 20px 0;
 }
 .section-title h2 {
   letter-spacing: 5px;
@@ -95,10 +93,8 @@ body {
   display: block;
   width: 10%;
   margin: 10px auto;
-  border-bottom: solid #14A68C;
-} 
-
-
+  border-bottom: solid #14a68c;
+}
 
 .service-card {
   min-height: 250px;
@@ -106,21 +102,13 @@ body {
 
 .service-img {
   width: 100%;
-
+  height: auto;
 }
+
 .service-img img {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
-
-
-
-
-
 
 /*=== Footer ===*/
 footer {
@@ -131,7 +119,7 @@ footer {
   display: table;
 }
 .footer-nav {
-  vertical-align: middle; 
+  vertical-align: middle;
   display: table-cell;
 }
 
@@ -139,7 +127,7 @@ footer {
   margin: 0;
   padding: 0;
   list-style: none;
-  vertical-align: middle
+  vertical-align: middle;
 }
 .footer-nav li {
   display: inline-block;
