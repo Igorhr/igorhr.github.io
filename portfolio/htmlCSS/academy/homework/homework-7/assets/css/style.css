@@ -9,7 +9,6 @@ body {
 
 body {
   font-family: sans-serif;
-  text-align: center;
 
 }
 
@@ -24,13 +23,7 @@ body {
   overflow: hidden;
   overflow-x: auto;
 }
-.navbar img {
-  display: inline-block;
-  float: left;
-  height: 50px;
-  padding: 0;
-  margin: auto;
-}
+
 .navbar ul {
   display: table;
   vertical-align: middle;
@@ -76,17 +69,26 @@ body {
 }
 
 
+
+
+
 /*=== Main  ===*/
+
 /* services */
 
 .services {
   background: #17C2A4;
   color: #fff;
+  text-align: center;
+}
+.section-title {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 .section-title h2 {
   letter-spacing: 5px;
   margin: 0;
-  padding-top: 25px;
 }
 .section-title h2:after {
   content: "";
@@ -95,9 +97,16 @@ body {
   margin: 10px auto;
   border-bottom: solid #14A68C;
 } 
+
+
+
+.service-card {
+  min-height: 250px;
+}
+
 .service-img {
   width: 100%;
-  
+
 }
 .service-img img {
   max-width: 100%;
@@ -115,27 +124,29 @@ body {
 
 /*=== Footer ===*/
 footer {
-  text-align: center;
   background: #344b8e;
-  color: #fff;
   height: 100px;
-  display: table;
   width: 100%;
+  text-align: center;
+  display: table;
 }
 .footer-nav {
+  vertical-align: middle; 
+  display: table-cell;
+}
+
+.footer-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: table-cell;
-  vertical-align: middle;
+  vertical-align: middle
 }
 .footer-nav li {
   display: inline-block;
-
 }
 .footer-nav a {
+  display: block;
   color: white;
   text-decoration: none;
-  padding: 0 25px;
-  font-size: 20px;
+  margin: 5px 15px;
 }
