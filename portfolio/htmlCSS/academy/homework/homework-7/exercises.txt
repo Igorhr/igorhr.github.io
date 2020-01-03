@@ -1,0 +1,5 @@
+HTML Homework 7 Exercise
+
+Slikite vi se stavani u assets/img/ foldero. Deka so ima krug so siva boja stavejte samite nekoj sliki
+
+Use CSS Classes in CSS. Use Font Awesome for Icons https://fontawesome.com/v4.7.0/
