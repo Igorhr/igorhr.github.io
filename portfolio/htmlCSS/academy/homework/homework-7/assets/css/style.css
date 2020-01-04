@@ -144,7 +144,7 @@ body {
 
 /* team */
 .team {
-  padding: 80px 0;
+  padding: 100px 0;
   background: #e7f1f8;
   color: #000;
   text-align: center;
@@ -152,6 +152,7 @@ body {
 .team-card {
   padding-bottom: 40px;
 }
+
 .team-img {
   width: 150px;
   height: 150px;
@@ -172,6 +173,9 @@ body {
   color: #7BD1EE;
   padding: 0;
   margin: 0;
+}
+.team-card p {
+  height: 110px;
 }
 .team-icons {
   width: 80%;
@@ -197,6 +201,39 @@ body {
 }
 .team-icons i {
   color: white;
+}
+
+
+/* Portfolio */
+.portfolio {
+  padding: 100px 0 125px;
+  background: #FFDD99;
+  color: #4A4741;
+  text-align: center;
+}
+.portfolio-content {
+  padding-bottom: 20px;
+}
+.portfolio-card {
+  padding-bottom: 40px;
+}
+.portfolio-card h3 {
+  text-transform: uppercase;
+}
+.portfolio-img {
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
+}
+.portfolio-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-btn {
+  background: #17C2A4;
+  border-bottom: 5px outset #15AB91;
+
 }
 
 /*=== Footer ===*/
