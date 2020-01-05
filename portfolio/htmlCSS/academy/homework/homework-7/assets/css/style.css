@@ -1,10 +1,8 @@
 /*=== Custom code ===*/
 /*=== Header ===*/
-html,
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -22,6 +20,7 @@ body {
   display: table;
   text-align: right;
   position: relative;
+  table-layout: auto;
 }
 
 .navbar img {
@@ -29,17 +28,35 @@ body {
   left: 2%;
   top: 50%;
   transform: translateY(-50%);
-  width: auto;
-  height: 80px;
+  max-width: 80px;
+  height: auto;
 }
 .navbar ul {
   width: 100%;
-  display: table-cell;
+  display: table;
   vertical-align: middle;
-  white-space: nowrap;
+  white-space: wrap;
   list-style: none;
   position: relative;
   right: 50px;
+}
+@media (max-width:491px) {
+  .navbar ul {
+    text-align: center;
+    right: auto;
+    padding: 0;
+  }
+  .navbar img {
+    padding: 0;
+    margin: -10px 0 -30px 0;
+    display: block;
+    position: relative;
+  left:42%;
+  top: none;
+  transform: translateX(-50%);
+  max-width: 80px;
+  height: auto;
+  }
 }
 .navbar li {
   display: inline-block;
@@ -50,6 +67,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   text-transform: uppercase;
+  border-radius: 5px;
   transition: 0.25s background-color ease-in-out;
 }
 .navbar ul li a:hover {
@@ -86,6 +104,13 @@ body {
   font-weight: 700;
   border-bottom: 5px outset #c86a40;
   border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+  opacity: 0.7;
+
+}
+.btn:hover,
+.btn:focus {
+opacity: 1;
 }
 
 /*=== Main  ===*/
@@ -156,8 +181,8 @@ body {
 }
 
 .team-img {
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  height: auto;
   margin: 0 auto;
 }
 .team-img img {
@@ -184,6 +209,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
 .team-icons ul {
   width: 100%;
   margin: 0;
@@ -243,20 +269,19 @@ body {
 }
 
 .testimonials-card {
- position: relative;
-min-height: 200px;
+  position: relative;
+  min-height: 200px;
 }
-
-
 
 .testimonials-card img {
-position: absolute;
-border-radius: 50%;
-  width: 100px;
+  position: absolute;
+  border-radius: 50%;
+  max-width: 100px;
   height: auto;
+  margin: 0 auto;
 }
 .testimonials-info {
-  padding-left: 115px;
+  margin-left: 115px;
 }
 .testimonials-card p {
   font-style: italic;
@@ -269,9 +294,8 @@ border-radius: 50%;
   display: block;
   font-size: 16px;
   margin-right: 15px;
-  color: #F2AD91;
+  color: #f2ad91;
   text-transform: none;
-
 }
 
 @media (max-width: 500px) {
@@ -285,14 +309,14 @@ border-radius: 50%;
     margin: 0 auto;
   }
   .testimonials-info {
-    padding-left: 0;
+    margin-left: 0;
   }
 }
 
 /* Contact */
 .contact {
-  padding: 100px 0 125px;
-  background: #3C5499;
+  padding: 100px 0 100px;
+  background: #3c5499;
   color: #fff;
   text-align: center;
 }
@@ -304,16 +328,14 @@ border-radius: 50%;
 .contact-card input {
   width: 100%;
   padding: 10px 0;
-  background: #273A71;
+  background: #273a71;
   border: none;
 }
 .contact-card textarea {
   width: 100%;
-  background: #273A71;
+  background: #273a71;
   border: none;
   padding-top: 10px;
-  margin-bottom:40px;
-
 }
 .contact-card input::placeholder,
 .contact-card textarea::placeholder {
@@ -322,32 +344,31 @@ border-radius: 50%;
 }
 
 .contact-btn {
-  background: #30BAE7;
-  border-bottom: 5px outset #2AA2CA;
+  display: inline-block;
+  margin-top: 40px;
+  background: #30bae7;
+  border-bottom: 5px outset #2aa2ca;
 }
-
-
-
 
 /*=== Footer ===*/
 .footer {
   background: #344b8e;
-  height: 100px;
   width: 100%;
   text-align: center;
-  display: table;
+  position: relative;
+  height: 100px;
 }
 .footer-nav {
-  vertical-align: middle;
-  display: table-cell;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.footer-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  vertical-align: middle;
-}
 .footer-nav li {
   display: inline-block;
 }
@@ -357,8 +378,9 @@ border-radius: 50%;
   color: white;
   text-decoration: none;
   margin: 5px 25px;
+  transition: color 0.25s ease-in-out;
 }
 
 .footer-nav a:hover {
-  color:#31A4D6;
+  color: #31a4d6;
 }
