@@ -25,7 +25,7 @@ body {
 
 .navbar img {
   position: absolute;
-  left: 2%;
+  left: 5%;
   top: 50%;
   transform: translateY(-50%);
   max-width: 80px;
@@ -38,7 +38,7 @@ body {
   white-space: wrap;
   list-style: none;
   position: relative;
-  right: 50px;
+  right: 5%;
 }
 @media (max-width:491px) {
   .navbar ul {
@@ -51,7 +51,7 @@ body {
     margin: -10px 0 -30px 0;
     display: block;
     position: relative;
-  left:42%;
+  left:50%;
   top: none;
   transform: translateX(-50%);
   max-width: 80px;
@@ -380,7 +380,12 @@ opacity: 1;
   margin: 5px 25px;
   transition: color 0.25s ease-in-out;
 }
-
 .footer-nav a:hover {
   color: #31a4d6;
+}
+@media (max-width: 475px) {
+  .footer-nav a {
+    font-size: 16px;
+    margin: 5px 10px;
+  }
 }
