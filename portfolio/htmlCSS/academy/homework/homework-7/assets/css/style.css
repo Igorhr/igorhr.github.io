@@ -124,7 +124,6 @@ body {
 }
 .section-title {
   text-align: center;
-
   width: 90%;
   margin: 0 auto;
   padding-bottom: 60px;
@@ -146,6 +145,12 @@ body {
   width: 50%;
   margin: 0 auto;
   line-height: 25px;
+}
+
+@media (max-width:768px){
+.section-title p {
+    width: 100%;
+  }
 }
 
 .service-card {
