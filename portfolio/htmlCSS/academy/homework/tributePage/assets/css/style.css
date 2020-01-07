@@ -28,6 +28,11 @@ body {
   height: 100%;
   background-image: radial-gradient(#3f494b, #1c2223);
 }
+.header-images {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
 .death-star {
   width: 100%;
   max-width: 500px;
