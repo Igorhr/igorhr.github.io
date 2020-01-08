@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+    .caracter-card a {
+  display: inline-block;
+  position: static;
+  transform:none;
+
+    }
+}
