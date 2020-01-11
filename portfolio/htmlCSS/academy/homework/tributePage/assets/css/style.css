@@ -32,12 +32,11 @@ p {
   padding: 0 15px;
 }
 .navbar a {
-  color: #d6d6d6;
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
-  
-  transition: all 1s ease-in-out;
-
+  margin-left: 5px;
+  transition: all 0.31s ease-in-out;
 }
 .navbar a:hover {
   -webkit-text-stroke: 1px #edca3f;

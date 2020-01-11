@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .movie-card p{
     width: auto;
     margin: 0 auto 10px;
@@ -84,5 +84,18 @@
   .testimonial-info {
     padding-left: 0;
   }
-
+  .navbar {
+    margin: 0 auto;
+    right: 0%;
+    width: 99%;
+  }
+.navbar li {
+  padding: 0;
+}
+  .navbar a {
+    font-size: 14px;
+    margin-left: 1px;
+    transition: all 1s ease-in-out;
+  
+  }
 }
