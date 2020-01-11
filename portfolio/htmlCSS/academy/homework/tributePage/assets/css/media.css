@@ -69,3 +69,20 @@
     width: inherit;
   }
 }
+
+@media (max-width: 480px) {
+  .movie-card p{
+    width: auto;
+    margin: 0 auto 10px;
+  }
+
+  .testimonial-card img {
+    position: static;
+    display: block;
+    margin: 0 auto;
+  }
+  .testimonial-info {
+    padding-left: 0;
+  }
+
+}
