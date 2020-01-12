@@ -13,36 +13,7 @@ p {
   font-family: "Muli", sans-serif;
 }
 /*===== HEADER =====*/
-/*navbar*/
-.navbar {
-  position: absolute;
-  top: 2%;
-  right: 1%;
-}
-.navbar ul{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  white-space: nowrap;
-}
-.navbar li {
-  display: inline-block;
-  position: relative;
-  padding: 0 15px;
-}
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  margin-left: 5px;
-  transition: all 0.31s ease-in-out;
-}
-.navbar a:hover {
-  -webkit-text-stroke: 1px #edca3f;
-  -webkit-text-fill-color: black;
-}
-/*navbar end*/
+
 .header {
   position: relative;
   text-transform: uppercase;
@@ -101,6 +72,37 @@ p {
 .btn:focus {
   box-shadow: inset 200px 0 5px 0 rgba(244, 23, 52, 1);
 }
+
+/*navbar*/
+.navbar {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+}
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  white-space: nowrap;
+}
+.navbar li {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 5px;
+  transition: all 0.31s ease-in-out;
+}
+.navbar a:hover {
+  -webkit-text-stroke: 1px #edca3f;
+  -webkit-text-fill-color: black;
+}
+/*navbar end*/
 /*===== HEADER END =====*/
 
 /*===== MAIN =====*/
@@ -184,7 +186,6 @@ p {
   font-size: 40px;
   padding: 0;
   margin: 0;
-
 }
 
 .movie-card img {
@@ -192,7 +193,6 @@ p {
   max-width: 100%;
   height: auto;
   box-shadow: 0 0 20px 1px black;
-
 }
 .movie-card p {
   font-size: 20px;
