@@ -75,9 +75,12 @@ p {
 
 /*navbar*/
 .navbar {
-  position: absolute;
+  /* position: absolute;
   top: 2%;
-  right: 1%;
+  right: 1%; */
+  padding-top: 20px;
+  overflow: hidden;
+  scr
 }
 .navbar ul {
   padding: 0;
