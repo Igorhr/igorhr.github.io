@@ -80,7 +80,7 @@ p {
   right: 1%; */
   padding-top: 20px;
   overflow: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .navbar ul {
   padding: 0;
