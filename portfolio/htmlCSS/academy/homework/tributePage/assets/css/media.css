@@ -16,7 +16,11 @@
     height: 100px;
   }
 }
-
+@media (max-width: 1200px) {
+  .caracter-card {
+    min-height: 420px;
+  }
+}
 @media (max-width: 991px) {
   .caracter-card {
     min-height: 500px;
