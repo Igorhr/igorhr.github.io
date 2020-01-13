@@ -150,6 +150,7 @@ p {
   box-shadow: 0 0 20px 1px black;
 }
 .about-card p {
+  text-align: left;
 }
 .last-info {
   border-top: 1px dashed black;
@@ -179,14 +180,38 @@ p {
   font-family: "Poller One", cursive;
   text-align: left;
   letter-spacing: 0;
-  font-size: 32px;
+  font-size: 16px;
+}
+
+.movie-card span:first-child::after {
+ 
+}
+.movie-card span.ep:after {
+  content: "";
+  margin: -7px 0 20px 120px;
+  position: absolute;
+  display: block;
+  width: 145px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: black;
+}
+.movie-card span.sp2:after {
+  content: "";
+  margin: -7px 0 20px 120px;
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: black;
 }
 .movie-card span:nth-child(2) {
-  text-decoration: underline overline;
-  letter-spacing: 4px;
-  word-spacing: 0.8em;
+  text-decoration: underline ;
+  letter-spacing: 1px;
+  word-spacing: 0.1em;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   padding: 0;
   margin: 0;
 }
