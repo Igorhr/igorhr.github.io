@@ -196,16 +196,26 @@ p {
   border-radius: 10px;
   background-color: black;
 }
-.movie-card span.sp2:after {
-  content: "";
-  margin: -7px 0 20px 120px;
-  position: absolute;
-  display: block;
-  width: 15px;
-  height: 5px;
-  border-radius: 10px;
-  background-color: black;
+.movie-card span.ep2:after {
+  width: 158px;
 }
+
+.movie-card span.ep3:after {
+  width: 174px;
+}
+.movie-card span.ep4:after {
+  width: 180px;
+}
+.movie-card span.ep4:after {
+  width: 180px;
+}
+.movie-card span.ep5:after {
+  width: 165px;
+}
+.movie-card span.ep6:after {
+  width: 178px;
+}
+
 .movie-card span:nth-child(2) {
   text-decoration: underline ;
   letter-spacing: 1px;
