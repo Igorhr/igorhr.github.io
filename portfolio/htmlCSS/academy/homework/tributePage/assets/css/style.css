@@ -137,10 +137,9 @@ p {
 /*== Section-Title END ==*/
 /*== About ==*/
 .about-card {
-  margin-top: 50px;
+  margin-top: 60px;
   width: 100%;
-  height: ;
-  :500px ;
+  /* height:500px ; */
   position: relative;
 }
 .about-card img {
@@ -183,9 +182,9 @@ p {
   font-size: 16px;
 }
 
-.movie-card span:first-child::after {
- 
-}
+
+
+
 .movie-card span.ep:after {
   content: "";
   margin: -7px 0 20px 120px;
@@ -216,7 +215,7 @@ p {
 }
 
 .movie-card span:nth-child(2) {
-  text-decoration: underline ;
+  text-decoration: underline;
   letter-spacing: 1px;
   word-spacing: 0.1em;
   font-weight: 700;
@@ -277,8 +276,7 @@ p {
 
 .caracter-card a {
   padding: 8px 15px;
-
-  color: #f41734;
+  /* color: #f41734; */
   color: #d6d6d6;
   font-size: 12px;
   display: block;
