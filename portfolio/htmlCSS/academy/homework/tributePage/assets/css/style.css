@@ -191,9 +191,8 @@ p {
   margin: -7px 0 20px 120px;
   position: absolute;
   display: block;
-  width: 145px;
+  width: 143px;
   height: 5px;
-  border-radius: 10px;
   background-color: black;
 }
 .movie-card span.ep2:after {
