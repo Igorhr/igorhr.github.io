@@ -1,13 +1,16 @@
 /* Hide scrollbar for IE and Edge */
 html,
 body {
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
+ 
   height: 100%;
   max-width: 100%;
   font-family: "Poller One", cursive;
-  scrollbar-width: none;
+
   /* font-family: 'Muli', sans-serif; */
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
 }
 p {
   font-family: "Muli", sans-serif;
