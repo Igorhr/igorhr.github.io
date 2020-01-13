@@ -270,7 +270,8 @@ p {
   display: block;
   font-size: 0.8em;
 }
-.caracters p {
+.caracter-card p {
+  text-align: left;
   margin-bottom: 25px;
 }
 
@@ -333,6 +334,7 @@ p {
   font-size: 0.8em;
 }
 .testimonial-info p {
+  text-align: left;
   font-style: italic;
   margin-bottom: 25px;
 }
